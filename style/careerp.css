@@ -1,0 +1,254 @@
+@font-face {
+    font-family: "ManropeRegular";
+    src: url(../Fonts/Manrope-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'ManropeBold';
+    src: url(../Fonts/Manrope-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'ManropeMedium';
+    src: url(../Fonts/Manrope-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'ManropeSemi';
+    src: url(../Fonts/Manrope-SemiBold.ttf);
+}
+  
+
+@font-face {
+    font-family: "TTSupermolotNeue";
+    src: url(../Fonts/TTSupermolotNeue-ExpDBold.ttf);
+}
+
+.header-image-block{
+    height: 500px;
+    background-image: url('../HeaderImage/career-header-image.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 500px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: end;
+    padding-bottom: 64px;
+    padding-left: 64px;
+}
+
+.header-title-text{
+    font-family: 'TTSupermolotNeue';
+    font-weight: 600;
+    font-size: 32px;
+    color: white;
+}
+
+.career-header-text-block{
+	display: flex;
+	justify-content: center;
+}
+
+.career-header-text{
+	font-family: 'ManropeRegular';
+}
+
+.career-header-text{
+	font-family: 'ManropeRegular';
+}
+
+.career-para-text{
+	font-family: 'ManropeRegular';
+}
+
+.career-long-description-header-text{
+	font-family: 'TTSupermolotNeue';
+}
+
+.career-long-description-para-text{
+	font-family: 'ManropeRegular';
+}
+
+.career-header-para-block{
+	margin-top: 64px;
+	margin-bottom: 64px;
+	width: 80vw;
+}
+
+
+/* ------------------------------------------ */
+
+.career-header-container{
+	background-color: #9d78a7;
+	padding-top: 32px;
+	padding-bottom: 32px;
+}
+
+.career-text-header{
+	padding-top: 8px;
+	text-align: center;
+	color: white;
+}
+
+.career-para-container{
+	display: flex;
+	justify-content: center;
+	padding-top: 16px;
+}
+
+.career-para-header{
+	width: 500px;
+	text-align: center;
+	color: whitesmoke;
+}
+
+
+/* ------------------------------------------ */
+
+
+
+
+.research-main-container{
+    margin-top: 32px;
+    padding-bottom: 32px;
+    background-color: #e7e7e7;
+}
+
+.reaserch-partner-header{
+    padding-top: 32px;
+    padding-bottom: 12px;
+    text-align: center;
+}
+
+.research-card-container{
+    display: flex;
+    justify-content: center;
+}
+
+.research-card-row{
+    max-width: 1320px;
+}
+
+.research-card-col{
+    /* display: flex;
+    justify-content: center; */
+    margin: 20px;
+    background-color: white;
+    height: 200px;
+    width: 400px;
+    border-radius: 15px;
+}
+
+.research-card-col:hover{
+	box-shadow: 1px 10px 12px #cfcccc;
+}
+
+
+
+.research-block{
+    display: block;
+}
+
+.inner-research-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    height: 110px;
+    width: 220px;
+    /* background-color: white; */
+}
+
+.career-text-block{
+	padding: 16px;
+}
+
+.career-long-description-block{
+	margin-top: 32px;
+	margin-left: 80px;
+	margin-right: 80px;
+}
+
+.career-contact-us{
+	color: #1083c5;
+	cursor: pointer;
+}
+
+.career-para p{
+	/* word-break: break-all; */
+	overflow-wrap: break-word;
+	overflow: hidden;
+	display:-webkit-box;
+	text-overflow: ellipsis;
+	-webkit-line-clamp:4;
+	-webkit-box-orient:vertical;
+	/* white-space:nowrap; */
+
+}
+
+.news-redirect{
+	color: rgb(69, 69, 245);
+	cursor: pointer;
+}
+
+.read-more{
+	display: none;
+}
+
+.research-card-col:hover .read-more{
+	display: block;
+}
+
+@media screen and (max-width:880px) and (min-width:770px) {
+	.research-card-col{
+		display: flex;
+		justify-content: center;
+		margin: 20px;
+		background-color: white;
+		height: 150px;
+		width: 300px;
+		border-radius: 15px;
+		overflow: hidden;
+	}
+
+}
+
+@media screen and (max-width:770px) and (min-width:541px) {
+	.research-card-col{
+		display: flex;
+		justify-content: center;
+		margin: 20px;
+		background-color: white;
+		height: 150px;
+		width: 300px;
+		border-radius: 15px;
+		overflow: hidden;
+	}
+
+	.career-long-description-block {
+		margin-top: 32px;
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+}
+
+@media screen and (max-width:576px) and (min-width:300px){
+
+	.career-long-description-block {
+		margin-top: 32px;
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+
+	.research-card-col{
+		display: flex;
+		justify-content: center;
+		margin: 20px;
+		background-color: white;
+		height: 200px;
+		width: 80vw;
+		border-radius: 15px;
+		overflow: hidden;
+	}
+
+}

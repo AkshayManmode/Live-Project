@@ -1,0 +1,17 @@
+.box-container{
+    background-color: blueviolet;
+}
+
+.box{
+    height: 200px;
+    width: 200px;
+    border-right-color: black;
+    border-right-width: 1px;
+    border-right-style: solid;
+     
+    /* border: 1px solid;
+
+    border-image-source: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 50.83%, rgba(255, 255, 255, 0) 100%); */
+    
+}
+

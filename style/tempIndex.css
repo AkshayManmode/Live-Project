@@ -1,0 +1,437 @@
+@font-face {
+    font-family: "ManropeRegular";
+    src: url(../Fonts/Manrope-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'ManropeBold';
+    src: url(../Fonts/Manrope-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'ManropeMedium';
+    src: url(../Fonts/Manrope-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'ManropeSemi';
+    src: url(../Fonts/Manrope-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "TTSupermolotNeue";
+    src: url(../Fonts/TTSupermolotNeue-ExpDBold.ttf);
+}
+
+.scroll-container{
+    height: 100vh;
+}
+.scroll-area {
+    width: 100vw;
+    height: 100vh;
+}
+
+.scroll-container {
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+}
+
+.scroll-container {
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll-area {
+    scroll-snap-align: center;
+}
+
+.scroll-container,
+.scroll-area {
+    margin: 0 auto;
+}
+
+.scroll-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.scroll-area:nth-of-type(1) {
+    /* background: #49b293; */
+}
+
+.scroll-area:nth-of-type(2) {
+    /* background: #c94e4b; */
+}
+
+.scroll-area:nth-of-type(3) {
+    /* background: #4cc1be; */
+}
+
+.scroll-area:nth-of-type(4) {
+    /* background: #8360A6; */
+}
+
+
+.landing-header-welcome-text{
+    font-family: 'ManropeMedium';
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.landing-header-container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+}
+
+.landing-header-company-name-text{
+    font-family: 'ManropeBold';
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.landing-header-company-name-text-block{
+    display: block;
+}
+
+.landing-header-welcome-text-block{
+    text-align: center;
+}
+
+.landing-header-company-name-text-block{
+    text-align: center;
+}
+
+.landing-header-about-us-button-block{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+
+.buttom-right-image-block {
+    display: none;
+    /* position: absolute;
+    margin-top: -618px;
+    right: 801px; */
+}
+
+.buttom-right-image{
+    position: absolute;
+    height: 600px;
+    width: 800px;
+    /* background-color: yellow; */
+}
+
+
+.buttom-right-image{
+    position: absolute;
+    height: 600px;
+    width: 800px;
+    /* background-color: yellow; */
+}
+
+.landing-header-container{
+    background-image: url("/Images/desktop-top-left.png");
+    background-size: 600px 600px;
+    background-repeat: no-repeat;
+    background-position-x: 0px;
+}
+
+.landing-header-about-us-button-block{
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.about-us-button{
+    width: 154px;
+    height: 48px;
+    border-radius: 3px;
+    border: 1px solid #161623;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    background-color: transparent;
+    transition: 0.2s;
+    z-index: 20;
+}
+
+.about-us-button:hover{
+    background-color: #161623;
+    color: white;
+}
+
+.landing-who-we-are-main-block{
+    max-width: 1920px;
+    width: 80vw;
+}
+
+.landing-who-we-are-header-block{
+    text-align: center;
+}
+
+.landing-who-we-are-header-text{
+    font-family: 'TTSupermolotNeue';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.landing-who-we-are-text-block{
+    padding-top: 32px;
+    text-align: center;
+}
+
+.landing-who-we-are-text{
+    font-family: 'ManropeRegular';
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.landing-who-we-are-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: lightcoral; */
+}
+
+.image-grid{
+    --gap:16px;
+    --num-cols:3;
+    --row-height:300px;
+    --row-width:300px
+
+    box-sizing: border-box;
+    padding: var(--gap);
+
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols),1fr);
+    grid-auto-rows: var(--row-height);
+    /* grid-auto-columns: var(--row-width) ; */
+    gap: var(--gap);
+}
+
+.image-grid .image > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-grid-col-2{
+    grid-column: span 1;
+}
+
+.image-grid-row-2{
+    grid-row: span 2;
+}
+
+.image-grid-row-3{
+    grid-row: span 1;
+}
+
+.image-grid-col-3{
+    grid-column: span 2;
+}
+
+.center-text{
+    width: var(--row-width);
+    display: flex;
+    justify-content: center;
+}
+
+.image-text{
+    position: absolute;
+    margin-top: var(--row-height);
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    z-index: 100;
+    font-family: 'ManropeRegular';
+}
+
+.image-text-2{
+    position: absolute;
+    margin-top: 150px;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    z-index: 99;
+    padding: 0px 30px;
+    font-family: 'ManropeRegular';
+}
+
+.landing-animation-block{
+    width: 100%;
+    height: 650px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+.landing-animation-box{
+    max-width: 1920px;
+    width: 100%;
+    background-color: black;
+    overflow: hidden;
+    height: 650px;
+}
+
+
+.aspects-text{
+    font-family: 'TTSupermolotNeue';
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 55px;
+}
+
+.animation-block-row{
+    background-color: #131313;
+}
+
+.left-block-col{
+    height: 650px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    /* flex-direction: column; */
+    /* background-color: #131313; */
+
+}
+
+
+.orbit-logo{
+    width: 115px;
+    height: 115px;
+}
+
+.mech-orbit {
+    position: absolute;
+    margin-top: 447px;
+    margin-left: 20px;
+}
+
+.electrical-orbit {
+    position: absolute;
+    margin-top: 270px;
+    margin-left: 277px;
+}
+
+.electronics-orbit {
+    position: absolute;
+    margin-top: 460px;
+    margin-left: 277px;
+}
+
+.server-orbit {
+    position: absolute;
+    margin-top: 399px;
+    margin-left: 505px;
+}
+
+.orbit-image{
+    width: 1311.5px;
+    height: 1311.5px;
+
+}
+
+.circle{
+    /* margin-top: 123px;
+    margin-left: 173px; */
+}
+
+
+.topic-header-text{
+    color: white;
+}
+
+.topic-header-text{
+    font-family: 'TTSupermolotNeue';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44px;
+}
+
+.topic-header-block{
+    display: block;
+}
+
+.topic-block{
+    display: block;
+    color: white;
+}
+
+.text-container-block{
+    padding-left: 64px;
+}
+
+.topic-block-ul{
+    list-style-type: none;
+}
+
+.topic-block-li{
+    padding: 8px 0px;
+    font-family: 'ManropeRegular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.white-background{
+    height: 1000px;
+    width: 1000px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin-top: 64px;
+    margin-left: -180px;
+}
+
+.white-background-text-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.white-text-block{
+    padding-top: 32px;
+}
+
+.white-text{
+    color: black;
+    font-family: 'ManropeRegular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    color: #000000;
+}
+
+.white-background-image-block{
+    margin-top: 16px;
+    width: 369.61px;
+    height: 306px;
+    background-color: rgb(97, 82, 82);
+}
+
+.text-block{
+    padding: 16px 16px;
+    width: 60%;
+}
+
+
+.mech-orbit-dark{
+    position: absolute;
+    margin-top: 124px;
+    margin-left: -37px;
+}

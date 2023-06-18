@@ -1,0 +1,3635 @@
+/* body{
+    overflow-x:hidden;
+} */
+
+@font-face {
+    font-family: "ManropeRegular";
+    src: url(../Fonts/Manrope-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'ManropeBold';
+    src: url(../Fonts/Manrope-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'ManropeMedium';
+    src: url(../Fonts/Manrope-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'ManropeSemi';
+    src: url(../Fonts/Manrope-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: "TTSupermolotNeue";
+    src: url(../Fonts/TTSupermolotNeue-ExpDBold.ttf);
+}
+
+.global-header-container {
+    z-index: 20;
+}
+
+.landing-header-welcome-text {
+    font-family: 'ManropeMedium';
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.landing-header-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+}
+
+.landing-header-company-name-text {
+    font-family: 'ManropeBold';
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.orbit-container-s {
+    display: none;
+}
+
+.second-orbit-container-s {
+    display: none;
+}
+
+.landing-header-company-name-text-block {
+    display: block;
+}
+
+.landing-header-welcome-text-block {
+    text-align: center;
+}
+
+.landing-header-company-name-text-block {
+    text-align: center;
+}
+
+.landing-header-about-us-button-block {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.about-us-button {
+    width: 154px;
+    height: 48px;
+    border-radius: 3px;
+    border: 1px solid #161623;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 27px;
+    background-color: transparent;
+    transition: 0.2s;
+    z-index: 20;
+}
+
+.about-us-button:hover {
+    background-color: #161623;
+    color: white;
+}
+
+.landing-who-we-are-container {
+    display: flex;
+    justify-content: center;
+}
+
+.landing-who-we-are-main-block {
+    display: none;
+}
+
+.landing-who-we-are-main-block.show {
+    display: block;
+    max-width: 1920px;
+    width: 80vw;
+    animation: fadeIn 2.2s forwards;
+}
+
+.landing-who-we-are-header-block {
+    text-align: center;
+}
+
+.landing-who-we-are-header-text {
+    font-family: 'TTSupermolotNeue';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.landing-who-we-are-text-block {
+    padding-top: 32px;
+    text-align: center;
+}
+
+
+.landing-who-we-are-text {
+    /* display: block; */
+    font-family: 'ManropeRegular';
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.landing-who-we-are-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: lightcoral; */
+}
+
+.main-container {
+    max-width: 1920px;
+    display: flex;
+    justify-content: center;
+}
+
+.image-grid {
+    --gap: 16px;
+    --num-cols: 3;
+    --row-height: 300px;
+    --row-width: 600px box-sizing: border-box;
+    padding: var(--gap);
+
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: var(--row-height);
+    gap: var(--gap);
+}
+
+.image-grid .image>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-grid-col-2 {
+    grid-column: span 1;
+}
+
+.image-grid-row-2 {
+    grid-row: span 2;
+}
+
+
+
+.one {
+    display: flex;
+    /* width: 400px; */
+    justify-content: center;
+    align-items: center;
+    background-image: url('../Images/grid_Our_battery.png');
+    background-size: cover;
+}
+
+.one:hover .center-text {
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* opacity: 0.3; */
+}
+
+.line-div1 {
+    position: absolute;
+    margin-top:30px;
+}
+
+.line1 {
+    opacity: 0;
+}
+
+.line1.show {
+    opacity: 1;
+    height: 1px;
+    border-radius: 15px;
+    border-color: white;
+    position: absolute;
+    animation: extend1 0.4s forwards;
+}
+
+@keyframes extend1 {
+    0% {
+        margin-left: var(--leftWid);
+        width: 0px;
+    }
+
+    100% {
+        width: var(--wid);
+    }
+}
+
+
+.two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../Images/grid_cell.png');
+    background-size: cover;
+}
+
+.two:hover .center-text {
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* opacity: 0.3; */
+}
+
+.line-div2 {
+    position: absolute;
+    margin-top: 30px;
+}
+
+.line2 {
+    opacity: 0;
+}
+
+.line2.show {
+    opacity: 1;
+    height: 1px;
+    border-radius: 15px;
+    border-color: white;
+    position: absolute;
+    animation: extend2 0.4s forwards;
+}
+
+@keyframes extend2 {
+    0% {
+        margin-left: var(--leftWid);
+        width: 0;
+    }
+
+    100% {
+        width: var(--wid2);
+    }
+}
+
+.three {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../Images/grid-EES-6.png');
+    background-size: auto 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.three:hover .center-text {
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* opacity: 0.3; */
+}
+
+
+.line-div3 {
+    position: absolute;
+    margin-top: 30px;
+}
+
+.line3 {
+    opacity: 0;
+}
+
+.line3.show {
+    opacity: 1;
+    height: 1px;
+    border-radius: 15px;
+    border-color: white;
+    position: absolute;
+    animation: extend3 0.4s forwards;
+}
+
+@keyframes extend3 {
+    0% {
+        margin-left: var(--leftWid);
+        width: 0;
+    }
+
+    100% {
+        width: var(--wid3);
+    }
+}
+
+
+.four {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../Images/grid_iord_network.png');
+    background-size: cover;
+}
+
+.four:hover .center-text {
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* opacity: 0.3; */
+}
+
+
+.line-div4 {
+    position: absolute;
+    margin-top: 30px;
+}
+
+.line4 {
+    opacity: 0;
+}
+
+.line4.show {
+    opacity: 1;
+    height: 1px;
+    border-radius: 15px;
+    border-color: white;
+    position: absolute;
+    animation: extend4 0.4s forwards;
+}
+
+@keyframes extend4 {
+    0% {
+        margin-left: var(--leftWid);
+        width: 0;
+    }
+
+    100% {
+        width: var(--wid4);
+    }
+}
+
+.new {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../Images/grid_energy.png');
+    background-size: cover;
+}
+
+.new:hover .center-text {
+    background-color: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    /* opacity: 0.3; */
+}
+
+
+.line-divNew {
+    position: absolute;
+    margin-top:30px;
+}
+
+.lineNew {
+    opacity: 0;
+}
+
+.lineNew.show {
+    opacity: 1;
+    height: 1px;
+    border-radius: 15px;
+    border-color: white;
+    position: absolute;
+    animation: extendNew 0.4s forwards;
+}
+
+@keyframes extendNew {
+    0% {
+        margin-left: var(--leftWid);
+        width: 0;
+    }
+
+    100% {
+        width: var(--widNew);
+    }
+}
+
+
+.secound-scroll {
+    display: none;
+}
+
+.second-div {
+    text-align: center;
+    position: absolute;
+}
+
+.center-text {
+    width: var(--row-width);
+    /* height: 100%; */
+    /* display: flex;
+    justify-content: center; */
+
+}
+
+.image-text {
+    /* position: absolute;
+    margin-top: var(--row-height); */
+    color: white;
+    /* text-align: center; */
+    font-size: 40px;
+    z-index: 99;
+    font-family: 'ManropeRegular';
+}
+
+.image-text-2 {
+    /* position: absolute;
+    margin-top: 150px; */
+    color: white;
+    /* text-align: center; */
+    font-size: 40px;
+    z-index: 99;
+    padding: 0px 30px;
+    font-family: 'ManropeRegular';
+}
+
+.image-grid {
+    max-width: 1920px;
+    width: 80%;
+    height: 610px;
+}
+
+.parent-div {
+    margin-top: 64px;
+    display: flex;
+    justify-content: center;
+}
+
+.divider-line-block {
+    display: flex;
+    justify-content: center;
+}
+
+.divider-line {
+    width: 80vw;
+    border: 1px solid black;
+}
+
+.divider-line-1 {
+    display: none;
+
+}
+
+.divider-line-1.show {
+    display: block;
+    position: absolute;
+    border: 0.5px solid #131313;
+    width: 80vw;
+    animation: increase 0.5s forwards;
+}
+
+.divider-line-2 {
+    display: none;
+}
+
+.divider-line-2.show {
+    display: block;
+    position: absolute;
+    border: 0.5px solid #131313;
+    width: 80vw;
+    animation: increase 0.5s forwards;
+}
+
+.divider-line-3 {
+    display: none;
+}
+
+.divider-line-3.show {
+    display: block;
+    position: absolute;
+    border: 0.5px solid #131313;
+    width: 80vw;
+    animation: increase 0.5s forwards;
+    -webkit-animation: increase 0.5s forwards;
+    -moz-animation: increase 0.5s forwards;
+    -o-animation: increase 0.5s forwards;
+}
+
+
+
+@keyframes increase {
+    from {
+        display: block;
+        width: 20px;
+    }
+
+}
+
+.landing-header-container {
+    background-image: url("/Images/desktop-top-left.png");
+    background-size: 600px 600px;
+    background-repeat: no-repeat;
+    background-position-x: 0px;
+}
+
+.buttom-right-image-block {
+    position: absolute;
+    margin-top: -618px;
+    right: 801px;
+}
+
+.buttom-right-image {
+    position: absolute;
+    height: 600px;
+    width: 800px;
+    /* background-color: yellow; */
+}
+
+/* ------------------------------- */
+
+.landing-animation-container {
+    /* overflow: hidden; */
+    margin-top: 32px;
+
+}
+
+.landing-animation-block {
+    width: 100%;
+    height: 650px;
+    background-color: #ffffff;
+    display: flex;
+    /* overflow: hidden; */
+    overflow-y: hidden;
+    justify-content: center;
+}
+
+.landing-animation-box {
+    display: flex;
+    max-width: 1920px;
+    width: 100%;
+    background-color: #ffffff;
+    height: 650px;
+}
+
+.costum-bar-container {
+    display: flex;
+    height: 150px;
+    width: 1;
+    align-items: center;
+    background-color: #131313;
+}
+
+.costum-bar-maintext {
+    color: #ffffff;
+    font-size: 16px;
+    margin-left: 20px;
+    font-family: 'TTSupermolotNeue';
+
+}
+
+.Secound-animation-block {
+    width: 100%;
+    height: 650px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+}
+
+.Secound-animation-box {
+    display: flex;
+    max-width: 1920px;
+    width: 100%;
+    background-color: #ffffff;
+    height: 650px;
+}
+
+.left-animation-container {
+    display: flex;
+    align-items: center;
+    width: 35%;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+.secound-left-animation-container {
+    display: flex;
+    align-items: center;
+    width: 35%;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+.right-animation-body {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    width: 65%;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+.right-hide-container {
+    position: relative;
+    height: auto;
+    width: 1;
+}
+
+.circle-hide-box {
+    position: absolute;
+    height: auto;
+    width: auto;
+}
+
+.secound-circle-hide-box {
+    position: absolute;
+    height: auto;
+    width: auto;
+}
+
+.circle-hide-container {
+    position: absolute;
+    height: 650px;
+    width: 1000px;
+    background-color: #ffffff;
+    transform-origin: right 50%;
+    -webkit-animation: scaleup .5s ease-in-out forwards;
+    animation: scaleup .5s ease-in-out forwards;
+}
+
+
+
+.circle-hide-container-hide {
+    position: absolute;
+    height: 650px;
+    width: 1000px;
+    /* background-color: #131313; */
+    transform-origin: right 50%;
+    /* -webkit-animation: scaledown .5s ease-in-out forwards;
+    animation: scaledown .5s ease-in-out forwards; */
+    /* display: none; */
+    animation: scaledown .3s forwards;
+    -webkit-animation: scaledown .3s forwards;
+
+
+}
+
+.scroll-button {
+    display: none;
+}
+
+.compoinant-undermain-text {
+    position: absolute;
+    color: #000000;
+    font-size: 30px;
+    margin-top: 100px;
+    margin-left: 450px;
+    width: 321px;
+    font-style: 'ManropeRegular';
+    font-style: normal;
+    /* font-weight: 600; */
+    font-size: 32px;
+}
+
+.compoinant-undermain-text-secound {
+    position: absolute;
+    color: #000000;
+    font-size: 30px;
+    margin-top: 100px;
+    margin-left: 450px;
+    width: 210px;
+}
+
+.componant-under-discription {
+    opacity: 0;
+}
+
+/* shubham changes */
+
+.componant-under-discription.show {
+    /* opacity: 0; */
+    position: absolute;
+    font-family: 'ManropeRegular';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #313131;
+    width: 28vw;
+    text-align: left;
+    margin-top: 238px;
+    margin-left: 150px;
+    animation: text-delay .2s 0.5s forwards;
+    -webkit-animation: text-delay .2s 0.5s forwards;
+    -moz-animation: text-delay .2s 0.5s forwards;
+    -o-animation: text-delay .2s 0.5s forwards;
+
+}
+
+.secound-componant-under-discription {
+    opacity: 0;
+}
+
+/* shubham changes */
+
+.secound-componant-under-discription.show {
+    position: absolute;
+    color: #313131;
+    font-family: 'ManropeRegular';
+    width: 41vw;
+    text-align: left;
+    margin-top: 220px;
+    margin-left: 150px;
+    /* animation-name: text-delay;
+    animation-duration: .3s;
+    animation-delay: .2s;
+    animation-fill-mode: forwards; */
+    animation: text-delay .2s 0.5s forwards;
+    -webkit-animation: text-delay .2s 0.5s forwards;
+    -moz-animation: text-delay .2s 0.5s forwards;
+    -o-animation: text-delay .2s 0.5s forwards;
+}
+
+@keyframes text-delay {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.componant-under-sub-discription {
+    position: absolute;
+    color: #000000;
+    width: 30vw;
+    text-align: left;
+    margin-top: 490px;
+    /* margin-left: 183px;   Shubham changes */
+    margin-left: 120px;
+    font-family: "ManropeRegular";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+
+}
+
+.componant-under-sub-discription-secound {
+    position: absolute;
+    color: #000000;
+    width: 29vw;
+    text-align: left;
+    margin-top: 490px;
+    margin-left: 200px;
+    font-family: 'ManropeRegular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+@keyframes scaledown {
+    0% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+        opacity: 1;
+
+    }
+
+    100% {
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+        opacity: 0;
+    }
+}
+
+.circle-draw {
+    position: absolute;
+    overflow: hidden;
+    background-color: #F4F4F4;
+    height: 1100px;
+    border-radius: 50%;
+    width: 1100px;
+    margin-top: 30px;
+    display: flex;
+}
+
+.circle-draw-secound {
+    position: absolute;
+    overflow: hidden;
+    background-color: #F4F4F4;
+    height: 1100px;
+    border-radius: 50%;
+    width: 1100px;
+    margin-top: 30px;
+    display: flex;
+}
+
+
+.orbit-under-icon {
+    display: flex;
+    height: 61px;
+    width: 60px;
+    margin-top: 106px;
+    margin-left: 198px;
+    position: absolute;
+}
+
+.secound-orbit-under-icon {
+    display: flex;
+    height: 60px;
+    width: 60px;
+    margin-top: 103px;
+    margin-left: 194px;
+    position: absolute;
+}
+
+.secound-right-animation-body {
+    overflow: hidden;
+    display: flex;
+    width: 65%;
+    height: 100%;
+    background-color: #F4F4F4;
+}
+
+
+.animation-heading-text {
+    color: #000000;
+    font-size: 32px;
+    margin-left: 15%;
+    font-family: 'TTSupermolotNeue';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+}
+
+.animation-heading-text-secound {
+    color: #000000;
+    font-size: 32px;
+    margin-left: 15%;
+    font-family: 'TTSupermolotNeue';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+}
+
+#animation-heading-text-hide {
+    color: #6f6d6d;
+    font-size: 18px;
+    margin-left: 75px;
+    margin-top: -167px;
+    width: 330px;
+    height: 33px;
+    position: absolute;
+    font-family: 'TTSupermolotNeue';
+}
+
+#animation-heading-text-hide-secound {
+    color: #6f6d6d;
+    font-size: 18px;
+    margin-left: 75px;
+    margin-top: -167px;
+    width: 330px;
+    height: 33px;
+    position: absolute;
+    font-family: 'TTSupermolotNeue';
+}
+
+.main-componant-headline {
+    opacity: 0;
+}
+
+.main-componant-headline.show{
+    opacity: 0;
+    color: #000000;
+    font-size: 26px;
+    margin-left: 75px;
+    margin-top: -00px;
+    position: absolute;
+    font-family: 'TTSupermolotNeue';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44px;
+    animation: popUpText 0.8s 0.2s forwards;
+}   
+
+.main-componant-headline-secound{
+    opacity: 0;
+}
+
+.main-componant-headline-secound.show {
+    opacity: 0;
+    color: #000000;
+    font-size: 26px;
+    margin-left: 75px;
+    margin-top: -00px;
+    position: absolute;
+    font-family: 'TTSupermolotNeue';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44px;
+    animation: popUpText 0.8s 0.2s forwards;
+}
+
+.componat-ul-block {
+    margin-top: -100px;
+    position: absolute;
+}
+
+.componat-ul-block-secound {
+    margin-top: -100px;
+    position: absolute;
+}
+
+.componants-text {
+    color: #000000;
+    font-size: 18px;
+    margin-left: 41px;
+    margin-top: 91px;
+    position: absolute;
+    font-family: 'TTSupermolotNeue';
+}
+
+.second-componants-text {
+    font-size: 18px;
+    margin-left: 42px;
+    margin-top: 50px;
+    position: absolute;
+    font-family: 'TTSupermolotNeue'
+}
+
+.componants-text-ees{
+    opacity: 0;
+}
+
+.componants-text-ees.show {
+    opacity: 0;
+    color: #000000;
+    font-size: 18px;
+    margin-left: 41px;
+    margin-top: 91px;
+    position: absolute;
+    font-family: 'TTSupermolotNeue';
+    animation: popUpText 0.8s 0.2s forwards;
+
+}
+
+.componants-text-electricle{
+    opacity: 0;
+}
+
+.componants-text-electricle.show {
+    opacity: 0;
+    color: #000000;
+    font-size: 18px;
+    margin-left: 41px;
+    margin-top: 91px;
+    position: absolute;
+    font-family: 'TTSupermolotNeue';
+    animation: popUpText 0.8s 0.2s forwards;
+}
+.componants-text-iobattery{
+    opacity: 0;
+}
+
+.componants-text-iobattery.show {
+    opacity: 0;
+    color: #000000;
+    font-size: 18px;
+    margin-left: 41px;
+    margin-top: -4px;
+    position: absolute;
+    font-family: 'TTSupermolotNeue';
+    animation: popUpText 0.8s 0.2s forwards;
+
+}
+.componants-text-electronics{
+    opacity: 0;
+}   
+.componants-text-electronics.show {
+    opacity: 0;
+    color: #000000;
+    font-size: 18px;
+    margin-left: 41px;
+    margin-top: -59px;
+    position: absolute;
+    font-family: 'TTSupermolotNeue';
+    animation: popUpText 0.8s 0.2s forwards;
+
+}
+.componants-text-gps{
+    opacity: 0;
+}
+
+.componants-text-gps.show {
+    opacity: 0;
+    color: #000000;
+    font-size: 18px;
+    margin-left: 41px;
+    margin-top: -92px;
+    position: absolute;
+    font-family: 'TTSupermolotNeue';
+    animation: popUpText 0.8s 0.2s forwards;
+
+}
+
+.componants-text-ioplatform{
+    opacity: 0;
+}
+.componants-text-ioplatform.show {
+    opacity: 0;
+    color: #000000;
+    font-size: 18px;
+    margin-left: 41px;
+    margin-top: -176px;
+    position: absolute;
+    font-family: 'TTSupermolotNeue';
+    animation: popUpText 0.8s 0.2s forwards;
+
+}
+
+.componants-text-server{
+    opacity: 0;
+}
+
+.componants-text-server.show {
+    opacity: 0;
+    color: #000000;
+    font-size: 18px;
+    margin-left: 41px;
+    margin-top: -248px;
+    position: absolute;
+    font-family: 'TTSupermolotNeue';
+    animation: popUpText 0.8s 0.2s forwards;
+}
+
+.componant-image-secound {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    margin-top: 179px;
+    margin-left: 411px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.hide-body-first-container {
+    position: absolute;
+}
+
+.hide-body-secound-container {
+    position: absolute;
+}
+
+#user-application {
+    margin: 8px 0px;
+    width: 200px;
+}
+
+#widegt {
+    margin: 8px 0px;
+    width: 200px;
+}
+
+#ai-protocol {
+    margin: 8px 0px;
+    width: 200px;
+}
+
+#autorecovery {
+    margin: 8px 0px;
+    width: 200px;
+}
+
+#gpstracking {
+    margin: 8px 0px;
+    width: 200px;
+}
+
+#controller {
+    margin: 8px 0px;
+    width: 200px;
+}
+
+#bmcs {
+    margin: 8px 0px;
+    width: 200px;
+}
+
+#powerassistance {
+    margin: 8px 0px;
+    width: 200px;
+}
+
+#wireharness {
+    margin: 8px 0px;
+    /* width: 200px; */
+    width: 210px;
+    margin-left: 0px;
+}
+
+#Battery_Menu1 {
+    /* margin: 8px 0px; */
+    /* width: 200px; */
+}
+
+#Chassietext {
+    margin: 8px 0px;
+}
+
+#ioplatform {
+    margin: 8px 0px;
+}
+
+#suspensiontext {
+    margin: 8px 0px;
+}
+
+#ioplatform2 {
+    margin: 8px 0px;
+}
+
+#battery {
+    margin: 8px 0px;
+}
+
+#wheelstexts {
+    margin: 8px 0px;
+}
+
+/* shubham changes */
+
+.component-text-li {
+    cursor: pointer;
+    font-family: 'ManropeRegular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    width: 200px;
+    z-index: 99;
+}
+
+.componant-image{
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    display: flex;
+    margin-top: 166px;
+    margin-left: 381px;
+    /* animation: popUpText 1s 0.2s forwards; */
+}
+
+
+
+.secound-animation-heading-text {
+    color: #000000;
+    font-size: 32px;
+    margin-left: 15%;
+    font-family: 'TTSupermolotNeue';
+}
+
+.head-text-orbit {
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
+    margin-left: 400px;
+    margin-top: 70px;
+    position: absolute;
+    font-family: 'TTSupermolotNeue';
+}
+
+.main-first-orbit1 {
+    position: absolute;
+    display: flex;
+    margin-top: -100px;
+    height: 650px;
+    width: 650px;
+}
+
+#margintext {
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    margin-top: 100px;
+    width: 500px;
+    position: absolute;
+    font-family: 'TTSupermolotNeue';
+}
+
+.orbit-image-first {
+    display: flex;
+    height: 1500px;
+    width: 900px;
+    margin-top: -100px;
+    margin-left: 00px;
+}
+
+.orbit-image-secound {
+    display: flex;
+    height: 1500px;
+    width: 900px;
+    margin-top: -780px;
+    margin-left: 0px;
+}
+
+
+.mech-icon-orbit {
+    position: absolute;
+    display: flex;
+    height: 100px;
+    width: 100px;
+    margin-top: 250px;
+    margin-left: 55px;
+}
+
+.ees-icon-orbit {
+    position: absolute;
+    display: flex;
+    height: 130px;
+    width: 130px;
+    margin-top: 400px;
+    margin-left: 105px;
+}
+
+.electricle-icon-orbit {
+    position: absolute;
+    display: flex;
+    height: 100px;
+    width: 100px;
+    margin-top: 100px;
+    margin-left: 365px;
+}
+
+.batery-icon-orbit {
+    position: absolute;
+    display: flex;
+    height: 130px;
+    width: 130px;
+    margin-top: 100px;
+    margin-left: 110px;
+}
+
+.electronics-icon-orbit {
+    position: absolute;
+    display: flex;
+    height: 100px;
+    width: 100px;
+    margin-top: 450px;
+    margin-left: 270px;
+}
+
+.gps-icon-orbit {
+    position: absolute;
+    display: flex;
+    height: 130px;
+    width: 130px;
+    margin-top: 350px;
+    margin-left: 490px;
+}
+
+.server-icon-orbit {
+    position: absolute;
+    display: flex;
+    height: 100px;
+    width: 100px;
+    margin-top: 320px;
+    margin-left: 570px;
+}
+
+.platform-icon-orbit {
+    position: absolute;
+    display: flex;
+    height: 130px;
+    width: 130px;
+    margin-top: 120px;
+    margin-left: 470px;
+}
+
+
+.aspects-text {
+    font-family: 'TTSupermolotNeue';
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 55px;
+}
+
+.secound-scroll-button {
+    display: none;
+}
+
+.animation-block-row {
+    background-color: #131313;
+}
+
+.left-block-col {
+    height: 650px;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.orbit-logo {
+    width: 115px;
+    height: 115px;
+}
+
+.mech-orbit {
+    position: absolute;
+    margin-top: 447px;
+    margin-left: 20px;
+}
+
+.electrical-orbit {
+    position: absolute;
+    margin-top: 270px;
+    margin-left: 277px;
+}
+
+.electronics-orbit {
+    position: absolute;
+    margin-top: 460px;
+    margin-left: 277px;
+}
+
+.server-orbit {
+    position: absolute;
+    margin-top: 399px;
+    margin-left: 505px;
+}
+
+.orbit-image {
+    width: 1311.5px;
+    height: 1311.5px;
+}
+
+.secound-orbit-image {
+    width: 1311.5px;
+    height: 1311.5px;
+}
+
+.circle {
+    margin-top: 123px;
+    margin-left: 173px;
+}
+
+
+.topic-header-text {
+    color: white;
+}
+
+.topic-header-text {
+    font-family: 'TTSupermolotNeue';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 44px;
+}
+
+.topic-header-block {
+    display: block;
+}
+
+.topic-block {
+    display: block;
+    color: white;
+}
+
+.text-container-block {
+    padding-left: 64px;
+}
+
+.topic-block-ul {
+    list-style-type: none;
+}
+
+.topic-block-li {
+    padding: 8px 0px;
+    font-family: 'ManropeRegular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.white-background {
+    height: 1000px;
+    width: 1000px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin-top: 64px;
+    margin-left: -180px;
+}
+
+.white-background-text-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.white-text-block {
+    padding-top: 32px;
+}
+
+.white-text {
+    color: black;
+    font-family: 'ManropeRegular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    color: #000000;
+}
+
+.white-background-image-block {
+    margin-top: 16px;
+    width: 369.61px;
+    height: 306px;
+    background-color: rgb(97, 82, 82);
+}
+
+.text-block {
+    padding: 16px 16px;
+    width: 60%;
+}
+
+
+.mech-orbit-dark {
+    position: absolute;
+    margin-top: 124px;
+    margin-left: -37px;
+}
+
+.landing-header-welcome-text {
+    animation: fadeIn 2.2s forwards;
+}
+
+
+.landing-header-company-name-text-block,
+.landing-header-company-name-text-block {
+    animation: fadeIn 2.1s forwards;
+}
+
+
+.image:hover {
+    background-color: #000000;
+}
+
+.footer-container{
+    position: relative;
+}
+
+.scroll-button-first{
+    display: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        padding-left: 0px;
+    }
+}
+
+.icon-click-hover:hover{
+    cursor: pointer;
+    animation: popIn 0.10 forwards;
+    }
+    
+    @keyframes popIn {
+    from{
+    transform: scale(1);
+    }
+    
+    to{
+    transform: scale(1.3);
+    }
+}
+
+
+
+/* Mukund Sir --------------------------------------------------------------------------> */
+
+
+@media screen and (max-width:1920px) and (min-width:1080px) {
+
+    .orbit-image-secound {
+        display: flex;
+        height: 1500px;
+        width: 900px;
+        margin-top: -780px;
+        margin-left: 345px;
+    }
+
+    .batery-icon-orbit {
+        position: absolute;
+        display: flex;
+        height: 130px;
+        width: 130px;
+        margin-top: 100px;
+        margin-left: 311px;
+    }
+
+    .ees-icon-orbit {
+        position: absolute;
+        display: flex;
+        height: 130px;
+        width: 130px;
+        margin-top: 400px;
+        margin-left: 705px;
+    }
+
+    .platform-icon-orbit {
+        position: absolute;
+        display: flex;
+        height: 130px;
+        width: 130px;
+        margin-top: 5px;
+        margin-left: 747px;
+    }
+
+    .gps-icon-orbit {
+        position: absolute;
+        display: flex;
+        height: 130px;
+        width: 130px;
+        margin-top: 209px;
+        margin-left: 676px;
+    }
+
+    .orbit-image-first {
+        display: flex;
+        height: 1500px;
+        width: 900px;
+        margin-top: -100px;
+        margin-left: 344px;
+    }
+
+    .mech-icon-orbit {
+        position: absolute;
+        display: flex;
+        height: 100px;
+        width: 100px;
+        margin-top: 147px;
+        margin-left: 464px;;
+    }
+
+    .electricle-icon-orbit {
+        position: absolute;
+        display: flex;
+        height: 100px;
+        width: 100px;
+        margin-top: 375px;
+        margin-left: 483px;
+    }
+
+    .electronics-icon-orbit {
+        position: absolute;
+        display: flex;
+        height: 100px;
+        width: 100px;
+        margin-top: 450px;
+        margin-left: 773px;
+    }
+
+    .server-icon-orbit {
+        position: absolute;
+        display: flex;
+        height: 100px;
+        width: 100px;
+        margin-top: 230px;
+        margin-left: 772px;
+    }
+}
+
+#mechcomponanats{
+    opacity: 0;
+}
+
+#mechcomponanats.show{
+    opacity: 0;
+    animation: popUpText 0.2s 0.2s forwards;
+}
+
+@keyframes popUpText {  
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:2300px) and (min-width:1920px) {
+
+    .componant-under-sub-discription {
+        width: 32vw;
+    }
+
+    .secound-componant-under-sub-discription {
+        width: 32vw;
+    }
+
+    .componant-under-discription.show {
+        width: 41vw;
+    }
+}
+
+@media screen and (max-width:1920px) and (min-width:1686px) {
+    .componant-under-discription.show {
+        width: 41vw;
+    }
+
+    .componant-under-sub-discription {
+        width: 46vw;
+    }
+
+    .componant-under-sub-discription-secound {
+        width: 46vw;
+    }
+
+}
+
+@media screen and (max-width:1685px) and (min-width:1100px) {
+
+    .componant-under-sub-discription {
+        width: 46vw;
+        margin-left: 180px;
+    }
+
+    .componant-under-discription.show {
+        width: 46vw;
+    }
+
+    .componant-under-sub-discription-secound{
+        width: 46vw;
+    }
+    .componant-under-sub-discription-secound.show {
+        width: 46vw;
+    }
+    .secound-componant-under-discription.show {
+        width: 46vw;
+    }
+
+}
+
+@media screen and (max-width:1600px) and (min-width:1023px) {
+    .orbit-image-first {
+        margin-left: 118px;
+    }
+
+    .mech-icon-orbit {
+        margin-left: 235px;
+    }
+
+    .electricle-icon-orbit {
+        margin-left: 254px;
+    }
+
+    .server-icon-orbit {
+        margin-top: 199px;
+        margin-left: 623px;
+    }
+
+    .electronics-icon-orbit {
+        margin-top: 421px;
+        margin-left: 571px;
+    }
+
+    .orbit-image-secound {
+        margin-left: 117px;
+    }
+
+    .batery-icon-orbit {
+        margin-left: 82px;
+    }
+
+    .ees-icon-orbit {
+        margin-left: 476px;
+    }
+
+    .gps-icon-orbit {
+        margin-left: 471px;
+    }
+
+    .platform-icon-orbit {
+        margin-left: 520px;
+    }
+}
+
+
+@media screen and (min-width:1741px) {
+
+
+    .landing-animation-block {
+        width: 100%;
+        height: 650px;
+        background-color: #ffffff;
+        display: flex;
+        /* overflow: hidden; */
+        overflow-y: hidden;
+        justify-content: center;
+    }
+
+    .costum-bar-maintext {
+        color: #ffffff;
+        font-size: 16px;
+        margin-left: 350px;
+        font-family: 'TTSupermolotNeue';
+    }
+
+    .landing-animation-box {
+        display: flex;
+        max-width: 1920px;
+        width: 100vw;
+        /* border-style: solid;
+        border-width: 1px; */
+        background-color: #ffffff;
+        height: 650px;
+    }
+
+    .orbit-image-first {
+        display: flex;
+        height: 1500px;
+        width: 900px;
+        margin-top: -100px;
+        margin-left: 370px;
+    }
+
+    .server-icon-orbit {
+        position: absolute;
+        display: flex;
+        height: 100px;
+        width: 100px;
+        margin-top: 320px;
+        margin-left: 948px;
+    }
+
+    .electronics-icon-orbit {
+        position: absolute;
+        display: flex;
+        height: 100px;
+        width: 100px;
+        margin-top: 450px;
+        margin-left: 645px;
+    }
+
+    .electricle-icon-orbit {
+        position: absolute;
+        display: flex;
+        height: 100px;
+        width: 100px;
+        margin-top: 100px;
+        margin-left: 739px;
+    }
+
+    .mech-icon-orbit {
+        position: absolute;
+        display: flex;
+        height: 100px;
+        width: 100px;
+        margin-top: 250px;
+        margin-left: 420px;
+    }
+
+    .Secound-animation-block {
+        width: 100%;
+        height: 650px;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+    }
+
+    .Secound-animation-box {
+        display: flex;
+        max-width: 1920px;
+        width: 100vw;
+        background-color: #ffffff;
+        height: 650px;
+        border-style: solid;
+        border-width: 1px;
+    }
+
+    .orbit-image-secound {
+        display: flex;
+        height: 1500px;
+        width: 900px;
+        margin-top: -780px;
+        margin-left: 372px;
+    }
+
+    .platform-icon-orbit {
+        position: absolute;
+        display: flex;
+        height: 130px;
+        width: 130px;
+        margin-top: 120px;
+        margin-left: 850px;
+    }
+
+    .gps-icon-orbit {
+        position: absolute;
+        display: flex;
+        height: 130px;
+        width: 130px;
+        margin-top: 350px;
+        margin-left: 920px;
+    }
+
+    .batery-icon-orbit {
+        position: absolute;
+        display: flex;
+        height: 130px;
+        width: 130px;
+        margin-top: 100px;
+        margin-left: 480px;
+    }
+
+    .ees-icon-orbit {
+        position: absolute;
+        display: flex;
+        height: 130px;
+        width: 130px;
+        margin-top: 400px;
+        margin-left: 508px;
+    }
+}
+
+@media screen and (max-width:1288px) and (min-width:1157px) {
+    .mech-orbit {
+        position: absolute;
+        margin-top: 454px;
+        margin-left: 8px;
+    }
+
+    .electrical-orbit {
+        position: absolute;
+        margin-top: 346px;
+        margin-left: 204px;
+    }
+
+    .electronics-orbit {
+        position: absolute;
+        margin-top: 298px;
+        margin-left: 443px;
+    }
+
+    .server-orbit {
+        position: absolute;
+        margin-top: 488px;
+        margin-left: 399px;
+    }
+}
+
+@media screen and (max-width:1156px) and (min-width:1075px) {
+
+    .orbit-logo {
+        width: 85px;
+        height: 85px;
+    }
+
+    .mech-orbit {
+        position: absolute;
+        margin-top: 454px;
+        margin-left: 37px;
+    }
+
+    .electrical-orbit {
+        position: absolute;
+        margin-top: 346px;
+        margin-left: 229px;
+    }
+
+    .electronics-orbit {
+        position: absolute;
+        margin-top: 522px;
+        margin-left: 253px;
+    }
+
+    .server-orbit {
+        position: absolute;
+        margin-top: 471px;
+        margin-left: 440px;
+    }
+}
+
+@media screen and (max-width:1074px) and (min-width:1000px) {
+    .orbit-logo {
+        width: 85px;
+        height: 85px;
+    }
+
+    .mech-orbit {
+        position: absolute;
+        margin-top: 447px;
+        margin-left: 40px;
+    }
+
+    .electrical-orbit {
+        position: absolute;
+        margin-top: 270px;
+        margin-left: 301px;
+    }
+
+    .electronics-orbit {
+        position: absolute;
+        margin-top: 546px;
+        margin-left: 243px;
+    }
+
+    .server-orbit {
+        position: absolute;
+        margin-top: 490px;
+        margin-left: 404px;
+    }
+}
+
+@media screen and (max-width:1079px) and (min-width:901px) {
+    .ees-icon-orbit {
+        margin-top: 349px;
+    }
+
+    .gps-icon-orbit {
+        margin-top: 315px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .image-grid {
+        --num-cols: 2;
+        --row-height: 200px;
+    }
+
+    .image-text-2 {
+        margin-top: 100px;
+        padding: 0px 20px;
+
+    }
+
+    .image-text {
+        margin-top: 100px;
+    }
+
+
+    .image-grid-row-2 {
+        grid-row: span 1;
+    }
+
+    .image-grid-row-3 {
+        grid-column: span 1;
+    }
+
+}
+/* @media screen and (max-width:422px) and (min-width:900px){} */
+/* working -omkar */
+@media screen and (max-width:900px) and (min-width:561px) {
+
+    html, body {
+        overflow-x: hidden;
+        position: relative;
+    }
+    .scroll-button {
+        position: absolute;
+        display: flex;
+        height: 20px;
+        opacity: 0.3;
+        width: 20px;
+        margin-left: 352px;
+        margin-top: -605px;
+    }
+
+    .scroll-button-first {
+        display: flex;
+        height: 20px;
+        width: 20px;
+        position: absolute;
+        /* margin-top: 550px; */
+        opacity: 0.3;
+        margin-top: 608px;
+        margin-left: 369px;
+        z-index: 100;
+    }
+
+    #Application-mobile{
+        margin: 10px;
+    }
+
+    #Widget-mobile{
+        margin: 10px;
+
+    }
+    #Ai-mobile{
+        margin: 10px;
+
+    }
+    #Auto-Recovery-mobile{
+        margin: 10px;
+
+    }
+    /* #animation-heading-text-hide-secound {
+    color: #6f6d6d;
+    font-size: 18px;
+    margin-left: 75px;
+    margin-top: -167px;
+    width: 330px;
+    height: 33px;
+    position: absolute;
+    font-family: 'TTSupermolotNeue';
+} */
+
+    /* .second-feature-nav-ul-secound{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    padding-left: 284px;
+    margin-top: 30px;
+} */
+    .secound-orbit-image {
+    width: 1311.5px;
+    height: 1311.5px;
+    }
+    br {
+        display: none;
+    }
+
+    .line-div1{
+        display: none;
+    }
+
+    .line-div2{
+        display: none;
+    }
+
+    .line-div3{
+        display: none;
+    }
+
+    .line-div4{
+        display: none;
+    }
+
+    .line-divNew{
+        display: none;
+    }
+
+    .animation-heading-text {
+        color: #000000;
+        /* position: absolute; */
+        width: 449px;
+        height: 48px;
+        left: 23px;
+        top: 135px;
+        font-family: 'TTSupermolotNeue';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 37px;
+        margin-left: 52px;
+    }
+
+    .main-componant-text-second {
+        position: absolute;
+        margin-top: 23px;
+        width: auto;
+        margin-left: 75px;
+        margin-right: 31px;
+    }
+
+    .second-feature-nav-li-four {
+        text-decoration: none;
+        display: inline-block;
+        margin: 20px;
+    }
+
+    .second-feature-nav-ul-four {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        margin-top: -22px;
+        margin-left: -57px;
+        overflow: hidden;
+        /* margin-left: -18px; */
+        padding-right: 20px;
+    }
+
+    .second-feature-nav-li-third {
+        text-decoration: none;
+        display: inline-block;
+        margin: 20px;
+    }
+
+    .second-feature-nav-ul-third {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        margin-top: -37px;
+        overflow: hidden;
+        margin-left: -78px;
+    }
+
+    .second-feature-nav-li {
+        text-decoration: none;
+        display: inline-block;
+        /* padding-right: 18px; */
+        padding: 0px 8px;
+        
+    }
+
+    .second-feature-nav-ul {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        margin-left: -81px;
+        margin-top: -23px;
+    }
+
+    .second-logo-block {
+        display: flex;
+        justify-content: center;
+        height: 73px;
+        margin-left: -51px;
+        margin-top: -40px;
+    }
+
+    .second-orbit-header-text {
+        font-size: 38px;
+        padding-top: 32px;
+        margin-top: 156px;
+        text-align: center;
+        position: absolute;
+        width: 827px;
+        margin-left: 100px;
+
+    }
+
+    .second-orbit-header-text-block {
+        text-align: center;
+    }
+
+    .second-background-curve-s {
+        background-color: #F4F4F4;
+        height: 401px;
+        width: 963px;
+        border-radius: 70%;
+        margin-top: -153px;
+        margin-left: -86px;
+    }
+
+    .main-componant-text {
+        position: absolute;
+        margin-top: 23px;
+        width: auto;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .second-orbit-container-s {
+        display: block;
+    }
+
+    .orbit-container-s {
+        display: block;
+    }
+
+    .header-container-s {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .background-curve-s {
+        background-color: #F4F4F4;
+        height: 401px;
+        width: 963px;
+        border-radius: 70%;
+        margin-top: -144px;
+        margin-left: -86px;
+
+    }
+
+    .orbit-header-text-block {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .orbit-header-text {
+        font-size: 38px;
+        padding-top: 32px;
+        margin-top: 156px;
+        /* justify-content: center;
+        display: flex; */
+        text-align: center;
+        position: absolute;
+        /* width: 827px; */
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .logo-block {
+        display: flex;
+        justify-content: center;
+        height: 73px;
+        margin-left: -92px;
+        margin-top: -40px;
+    }
+
+    .logo-icons {
+        margin-top: -43px;
+        height: 80px;
+        width: 80px;
+        margin-left: -44px;
+
+    }
+
+    .second-logo-icons {
+        margin-top: -43px;
+        height: 80px;
+        width: 80px;
+        margin-left: -44px;
+    }
+
+    .feature-nav-ul {
+        display: flex;
+        justify-content: center;
+        padding-left: -114px;
+        margin-left: -81px;
+        margin-top: -25px;    }
+
+    .feature-nav-ul-secound {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 84px;
+        margin-top: -30px;
+    }
+
+    .feature-nav-ul-four {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        margin-top: -38px;
+       overflow: hidden;
+        margin-left: -116px;
+    }
+
+    .feature-nav-li-four {
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .feature-nav-ul-third {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        /* margin-top: -64px; */
+        overflow: hidden;
+        margin-top: -16px;
+        margin-left: -112px;
+    }
+
+    #controllermobile {
+        width: 62%;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+
+    #bmcsmobile {
+        width: 66%;
+        cursor: pointer;
+        margin-left: 20px;
+    }
+
+    #gpstrackingmobile {
+        width: 54%;
+        cursor: pointer;
+        margin-left: 22px;
+    }
+
+    #powerassistancemobile {
+        width: 266%;
+        cursor: pointer;
+        margin-left: 30px;
+    }
+
+    #autorecoverymobile {
+        width: 600%;
+        cursor: pointer;
+        margin-left: 30px;
+    }
+
+    #mobile-coponant-image {
+        position: absolute;
+        display: flex;
+        height: 200px;
+        width: 180px;
+        margin-left: -22px;
+        margin-top: -39px;
+    }
+
+
+    .feature-nav-li-third {
+        text-decoration: none;
+        display: inline-block;
+
+    }
+
+    .feature-nav-li {
+        text-decoration: none;
+        display: inline-block;
+        padding-right: 16px;
+    }
+
+    .feature-element-image-block {
+        display: flex;
+        justify-content: center;
+        margin-top: 32px;
+    }
+
+    .second-mobile-coponant-image {
+        position: absolute;
+        display: flex;
+        height: 200px;
+        width: 180px;
+    }
+
+    .feature-element-image {
+        width: 200px;
+        height: auto;
+        /* object-fit: cover; */
+    }
+
+    .feature-element-text-block {
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        margin-top: 214px;
+        text-align: center;
+        width: 760px;
+        /* margin-left: 58px; */
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);                                                                                                                                                                                                                                                      
+
+    }
+
+    .feature-element-text-class{
+        width: 90vw;
+    }
+
+    .read-more {                                                                                                                                                                                                                            
+        margin-top: 186px;
+        margin-left: -300px;
+        color: rgb(62, 62, 252);        
+    }
+
+
+    .landing-animation-block {
+        width: 100%;
+        height: 800px;
+        background-color: #ffffff;
+        display: flex;
+        overflow: hidden;
+        overflow-y: hidden;
+        justify-content: center;
+    }
+
+    .Secound-animation-block {
+        width: 100%;
+        height: 800px;
+        background-color: #ffffff;
+        display: flex;
+        overflow: hidden;
+        overflow-y: hidden;
+        justify-content: center;
+    }
+
+    .landing-animation-box {
+        display: flex;
+        border-radius: 3px;
+        border: 1px solid #161623;
+        max-width: 1920px;
+        margin-top: 10px;
+        width: 100%;
+        background-color: #ffffff;
+        height: 800px;
+    }
+
+    .Secound-animation-box {
+        display: flex;
+        max-width: 1920px;
+        width: 100%;
+        background-color: #ffffff;
+        height: 800px;
+        
+    }
+
+    .left-animation-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 86px;
+        background-color: #ffffff;
+        position: absolute;
+        margin-top: 84px;
+        z-index: 99;
+    }
+
+    .secound-left-animation-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+        background-color: #ffffff;
+        position: absolute;
+    }
+
+    .right-animation-body {
+        position: absolute;
+        display: flex;
+        overflow: hidden;
+        width: 100%;
+        margin-top: 150px;
+        height: 650px;
+        background-color: #ffffff;
+    }
+    #secound-right-animation-body {
+        position: absolute;
+        overflow: hidden;
+        /* display: flex; */
+        width: 105%;
+        /* height: max-content; */
+        margin-top: 150px;
+        background-color: #ffffff;
+    }
+
+    #orbit-secound-container {
+        position: relative;
+        height: auto;
+        width: 1;
+    }
+
+    .orbit-image-first {
+        overflow: hidden;
+        display: flex;
+        height: 1164px;
+        width: 621px;
+        margin-top: -100px;
+        margin-left: 00px;
+        rotate: 75deg;
+
+    }
+
+    .orbit-image-secound {
+        overflow: hidden;
+        display: flex;
+        height: 1164px;
+        width: 621px;
+        margin-top: -100px;
+        margin-left: 0px;
+        rotate: 75deg;
+        position: absolute;
+    }
+
+    .electricle-icon-orbit {
+        position: absolute;
+        display: flex;
+        height: 100px;
+        width: 100px;
+        margin-top: 222px;
+        margin-left: 475px;
+        z-index: 99;
+    }
+
+    .electronics-icon-orbit {
+        position: absolute;
+        display: flex;
+        height: 100px;
+        width: 100px;
+        margin-top: 350px;
+        margin-left: 170px;
+        z-index: 99;
+    }
+
+    .server-icon-orbit {
+        position: absolute;
+        display: flex;
+        height: 100px;
+        width: 100px;
+        margin-top: 465px;
+        margin-left: 459px;
+        z-index: 99;
+    }
+
+    .batery-icon-orbit {
+        position: absolute;
+        display: flex;
+        height: 130px;
+        width: 130px;
+        margin-top: 105px;
+        margin-left: 200px;
+        z-index: 99;
+    }
+
+    .platform-icon-orbit {
+        position: absolute;
+        display: flex;
+        height: 130px;
+        width: 130px;
+        margin-top: 214px;
+        margin-left: 470px;
+        z-index: 99;
+    }
+
+    .animation-heading-text-secound {
+        color: #000000;
+        font-size: 32px;
+        margin-left: 15%;
+        font-family: 'TTSupermolotNeue';
+        margin-top: 129px;
+    }
+
+    .ees-icon-orbit {
+        position: absolute;
+        display: flex;
+        height: 130px;
+        width: 130px;
+        margin-top: 434px;
+        margin-left: 418px;
+        z-index: 99;
+    }
+
+    .gps-icon-orbit {
+        position: absolute;
+        display: flex;
+        height: 130px;
+        width: 130px;
+        margin-top: 330px;
+        margin-left: 163px;
+        z-index: 99;
+    }
+
+    .mech-icon-orbit {
+        position: absolute;
+        display: flex;
+        height: 100px;
+        width: 100px;
+        margin-top: 132px;
+        margin-left: 220px;
+        z-index: 99;
+
+    }
+
+    .second-header-container-s {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .second-feature-nav-ul-secound {
+        /* margin-left: 248px; */
+        margin-top: -24px;
+        margin-left: -79px;
+    }
+
+    .feature-nav-block {
+        display: flex;
+        justify-content: center;
+        /* margin-left: 248px; */
+        margin-top: 46px;
+    }
+
+    .center-text {
+        width: var(--row-width);
+        /* height: 100%;
+        display: flex;
+        justify-content: center; */
+        margin-top: -105px;
+      }
+    /* .second-right-animation-body {
+        position: absolute;
+        display: flex;
+        overflow: hidden;
+        width: 100vw;
+        margin-top: 150px;
+        height: 650px;
+        background-color: #ffffff;
+    } */
+
+}
+
+
+@media screen and (max-width:560px) and (min-width:100px) {
+
+    /* .li{
+        display: none;
+    } */
+    .orbit-container-s {
+        display: block;
+    }
+
+    .second-orbit-container-s {
+        display: block;
+    }
+
+    .header-container-s {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .second-header-container-s {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    #animation-heading-text-hide {
+        display: none;
+    }
+
+    #main-componant-headline {
+        display: none;
+    }
+
+    .componants-text {
+        display: none;
+    }
+
+    .componants-text-electricle {
+        display: none;
+    }
+
+    .componants-text-electronics {
+        display: none;
+    }
+
+    .componants-text-server {
+        display: none;
+    }
+
+    #circle_hide_class {
+        display: none;
+    }
+
+    #Chassietext {
+        margin: 0px;
+        cursor: pointer;
+    }
+
+    #suspensiontext {
+        margin: 0px;
+        cursor: pointer;
+    }
+
+    #mobile-coponant-image {
+        position: absolute;
+        margin-top: 10px;
+        display: flex;
+        height: 150px;
+        width: 150px;
+        /* display: block; */
+        margin-left: -23px;
+    }
+
+    #battery {
+        margin: 0px;
+        cursor: pointer;
+    }
+
+    #wheelstexts {
+        margin: 0px;
+        cursor: pointer;
+    }
+
+    #wireharness {
+        margin-left: 25px;
+        width: 50%;
+        cursor: pointer;
+    }
+
+    #display {
+        width: 50%;
+        cursor: pointer;
+        margin-left: 120px;
+    }
+
+    #Battery_Menu1 {
+        /* margin: 0px 0px; */
+        /* width: 200px; */
+        cursor: pointer;
+    }
+    #Battery_Menu2 {
+        /* width: 50%; */
+        cursor: pointer;
+    }
+
+    #controllermobile {
+        /* width: 62%; */
+        cursor: pointer;
+        width: 91%;
+        margin-left: 39px;
+        position: static;
+    }
+
+    
+
+    #bmcsmobile {
+        width: 66%;
+        cursor: pointer;
+        margin-left: 36px;
+    }
+
+    #gpstrackingmobile {
+        width: 54%;
+        cursor: pointer;
+        margin-left: 20px;
+    }
+
+    #EV_GPS1 {
+        /* width: 91%; */
+        cursor: pointer;
+        /* margin-left: 23px; */
+    }
+
+    #EVGPS2 {
+        /* width: 79%; */
+        cursor: pointer;
+        /* margin-left: 156px; */
+    }
+
+    #EES1 {
+        /* width: 54%; */
+        cursor: pointer;
+        /* margin-left: -31px; */
+        /* padding: 0px 0px; */
+
+    }
+
+    #EES2 {
+        /* width: 54%; */
+        cursor: pointer;
+        /* margin-left: 110px; */
+        /* padding: 0px 0px; */
+    }
+
+    #powerassistancemobile {
+        width: 266%;
+        cursor: pointer;
+        margin-left: 30px;
+    }
+
+    #autorecoverymobile {
+        width: 600%;
+        cursor: pointer;
+        margin-left: 39px;
+    }
+
+    #Application-mobile{
+        margin: 10px;
+    }
+
+    #Widget-mobile{
+        margin: 10px;
+
+    }
+    #Ai-mobile{
+        margin: 10px;
+
+    }
+    #Auto-Recovery-mobile{
+        margin: 10px;
+
+    }
+
+
+    .background-curve-s {
+        background-color: #F4F4F4;
+        height: 260px;
+        width: 100vw;
+        /* margin-left: -50px; */
+        margin-top: -20px;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+        overflow: hidden;
+    }
+
+    .second-background-curve-s {
+        background-color: #F4F4F4;
+        height: 260px;
+        /* width: 455px; */
+        /* margin-left: -28px; */
+        width: 100vw;
+        margin-top: -20px;
+        border-bottom-left-radius: 50%;
+        border-bottom-right-radius: 50%;
+    }
+
+    .orbit-header-text-block {
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        margin-left: 31px;
+    }
+
+    .second-orbit-header-text-block {
+        text-align: center;
+        justify-content: center;
+        display: flex;
+        margin-left: 31px;
+
+    }
+
+    .orbit-header-text {
+        font-size: 38px;
+        padding-top: 32px;
+        margin-top: 50px;
+        width: auto;
+        /* justify-content: center; */
+        /* margin-left: 188px; */
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+
+    }
+
+    .second-orbit-header-text {
+        font-size: 38px;
+        padding-top: 32px;
+        margin-top: 50px;
+        position: absolute;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        
+
+    }
+
+
+    .logo-block {
+        display: flex;
+        justify-content: center;
+        height: 73px;
+        margin-left: -22px;
+        margin-top: -40px;
+    }
+
+    .second-logo-block {
+        display: flex;
+        justify-content: center;
+        height: 73px;
+        margin-left: -22px;
+        margin-top: -40px;
+        z-index: 99;
+        position: relative;
+    }
+
+    .logo-icons {
+        /* margin-top: -60px; */
+        height: 80px;
+        width: 80px;
+        margin-top: -45px;
+        margin-left: -28px;
+    }
+
+    .second-logo-icons {
+        margin-top: -50px;
+        height: 80px;
+        width: 80px;
+        z-index: 100;
+    }
+
+    .feature-nav-ul {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        padding-left: 40px;
+        margin-top: 40px;
+        width: 98vw;
+    }
+
+    .second-feature-nav-ul {
+        position: absolute;
+        display: inline-table;
+        margin-top: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: max-content;
+        padding-left: 0px;
+    }
+/* 
+    #ioplatform {
+        padding: 0px 40px;
+    }
+
+    #ioplatform2 {
+        padding: 0px 32px;
+    } */
+
+    .feature-nav-ul-secound {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: -18px;
+        margin-top: 40px;
+        overflow: hidden;
+        padding-right: 20px;
+        width: 98vw;
+
+    }
+    .second-feature-nav-ul-secound{
+        margin-top: -80px;
+        position: absolute;
+        display: flex;
+        /* padding-left: 70px; */
+        padding-left: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+    #ioplatform {
+        /* margin: 8px 0px;
+        margin-left: -134px; */
+        margin: 0px 0px;
+      }
+    #ioplatform2 {
+        /* margin: 8px 0px;
+        margin-left: 0px;
+        margin-left: 163px; */
+        margin: 0px 0px;
+
+    }
+/* 
+position: absolute;
+display: flex;
+justify-content: center;
+margin-top: 40px;
+overflow: hidden;
+margin-left: -18px;
+padding-right: 20px;
+ */
+
+
+/* position: absolute;
+margin-top: -100px;
+margin-top: -89px;
+width: auto;
+margin-left: 40px;
+margin-right: 40px; */
+    /* height: 40px;
+    width: 200px;
+    overflow-y: scroll; */
+
+    .second-feature-nav-second {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 80px;
+        margin-top: 40px;
+    }
+
+
+    .feature-nav-ul-third {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+        overflow: hidden;
+        margin-left: -18px;
+        padding-right: 20px;
+        width: 98vw;
+    }
+
+    .second-feature-nav-ul-third {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        margin-top: -80px;
+        overflow: hidden;
+        padding-left: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .feature-nav-ul-four {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        padding-right: 20px;
+        width: 84vw;
+        margin-top: 13px;
+        margin-left: 12px;
+    }
+
+    .second-feature-nav-ul-four {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        margin-top: -78px;
+        /* margin-left: 34px; */
+        overflow: hidden;
+        /* margin-left: -18px; */
+        /* padding-right: 20px; */
+        padding-left: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .feature-nav-li-four {
+        text-decoration: none;
+        display: inline-block;
+    }
+
+    .second-feature-nav-li-four {
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 88px;
+        margin-right: -8px;
+    }
+
+    .feature-nav-li-third {
+        text-decoration: none;
+        display: inline-block;
+
+    }
+
+    .second-feature-nav-li-third {
+        text-decoration: none;
+        display: inline-block;
+
+    }
+
+    .feature-nav-ul-fourth {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    #circle_hide_class {
+        display: none;
+    }
+    .li{
+        /* transition-property: ; */
+        transition-duration: 5s;
+        transition-delay: 1s;
+    }
+    /* ---> omkar
+    .feature-nav-li {
+        animation-name: move;
+        animation-delay: 1500ms;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+      }
+
+    @keyframes move {
+        from { left: 0px; }
+        to { left: 400px; }
+      } */
+    .feature-nav-li {
+        text-decoration: none;
+        display: inline-block;
+        padding-right: 18px;
+    }
+
+    .second-feature-nav-li {
+        /* position: absolute;
+        display: flex;
+        justify-content: center; */
+        /* padding: 0px 8px; */
+        display: inline-block;
+        padding: 8px 16px;
+        margin-top: 105px;
+    }
+
+    .feature-element-block{
+        width: 100vw;
+        overflow: hidden;
+    }
+
+    .feature-element-image-block {
+        display: flex;
+        justify-content: center;
+        margin-top: 32px;
+    }
+
+    .feature-element-image {
+        width: 74px;
+        height: 125px;
+        display: flex;
+        margin-top: 55px;
+        margin-right: 42px;
+        /* position: absolute; */
+    }
+
+    /* shubham changes */
+    .feature-element-text-block {
+        position: absolute;
+        margin-top: 57px;
+        /* width: auto; */
+        /* margin-left: 30px;
+        margin-right: 20px; */
+        overflow-x: scroll;
+        height: 256px;
+        width: 90vw;
+        left: 50%;
+        transform: translateX(-50%);
+        
+    }
+
+    .read-more {
+        color: rgb(62, 62, 252);
+        position: absolute;
+        margin-top: 96px;
+    }
+
+    .right-hide-container {
+        position: absolute;
+        height: auto;
+        /* width: 1; */
+    }
+
+    /* .feature-element-block{
+
+    } */
+    .global-header-container {
+        z-index: 20;
+        overflow: hidden;
+    }
+    /* .line-div1 {
+        position: absolute;
+        margin-top:-30px;
+    } */
+
+}
+
+@media screen and (max-width:470px) {
+     /* .line-div1 {
+        position: absolute;
+        margin-top:30px;
+    } */
+    html, body {
+        overflow-x: hidden;
+        position: relative;
+    }
+    
+    .line-div1{
+        display: none;
+    }
+
+    .line-div2{
+        display: none;
+    }
+
+    .line-div3{
+        display: none;
+    }
+
+    .line-div4{
+        display: none;
+    }
+
+    .line-divNew{
+        display: none;
+    }
+
+    .one:hover .center-text{
+        display: flex;
+        align-items: normal;
+    }
+
+    .two:hover .center-text{
+        display: flex;
+        align-items: normal;
+    }
+
+    .three:hover .center-text{
+        display: flex;
+        align-items: normal;
+    }
+
+    .four:hover .center-text{
+        display: flex;
+        align-items: normal;
+    }
+
+    .new:hover .center-text{
+        display: flex;
+        align-items: normal;
+    }
+
+    .icon-click-hover:hover{
+        cursor: pointer;
+        animation: popIn 0.10 forwards;
+        }
+        
+        @keyframes popIn {
+        from{
+        transform: scale(1);
+        }
+        
+        to{
+        transform: scale(1.3);
+        }
+    }
+
+    .global-header-container {
+        z-index: 20;
+        overflow: hidden;
+    }
+    .main-componant-text {
+        position: absolute;
+        /* margin-top: -100px; */
+        margin-top: -89px;
+        width: auto;
+        margin-left: 40px;
+        margin-right: 40px;
+        height: 373px;
+        overflow-y: scroll;
+    }
+
+    .main-componant-text-second {
+        position: absolute;
+        /* margin-top: -100px; */
+        margin-top: -116px;
+        width: 90vw;
+        height: 250px;
+        /* margin-left: 65px;
+        margin-right: 40px; */
+        height: 369px;
+        overflow-y: auto;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+
+
+
+    .display-none {
+        display: none;
+    }
+
+    .image-grid {
+        width: auto;
+    }
+
+    .image-text {
+        font-size: 20px;
+    }
+
+    .image-text-2 {
+        font-size: 20px;
+
+    }
+
+    .landing-header-welcome-text {
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    .landing-header-company-name-text {
+        font-weight: 700;
+        font-size: 22px;
+    }
+
+    .about-us-button {
+        width: 128px;
+        height: 43px;
+    }
+
+    .landing-who-we-are-header-text {
+        font-weight: 600;
+        font-size: 28px;
+    }
+
+    .landing-who-we-are-text {
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    .landing-header-container {
+        background-image: url("/Images/desktop-top-left.png"), url("/Images/desktop-bottom-left.png");
+        background-size: 405px 434px, 405px 334px;
+        background-repeat: no-repeat;
+        background-position-x: 10px;
+        background-position-y: 0px, 300px;
+    }
+
+    .buttom-right-image-block {
+        position: absolute;
+        margin-top: -374px;
+        right: 20px;
+        width: 90vw;
+        overflow: hidden;
+
+    }
+
+    .buttom-right-image {
+        width: 508px;
+        height: 343px;
+        overflow: hidden;
+    }
+
+    .one {
+        align-items: normal;
+    }
+
+    .two {
+        align-items: normal;
+    }
+
+    .three {
+        align-items: normal;
+    }
+
+    .four {
+        align-items: normal;
+    }
+
+    .new {
+        align-items: normal;
+    }
+
+    .landing-animation-container {
+        /* overflow: hidden; */
+        margin-top: 32px;
+    }
+
+    .landing-animation-block {
+        width: 100%;
+        height: 800px;
+        background-color: #ffffff;
+        display: flex;
+        overflow: hidden;
+        overflow-y: hidden;
+        justify-content: center;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    .Secound-animation-block {
+        width: 100%;
+        height: 800px;
+        background-color: #ffffff;
+        display: flex;
+        overflow: hidden;
+        overflow-y: hidden;
+        justify-content: center;
+    }
+
+    .landing-animation-box {
+        display: flex;
+        border-radius: 3px;
+        border: 1px solid #161623;
+        max-width: 1920px;
+        margin-top: 10px;
+        width: 100%;
+        background-color: #ffffff;
+        height: 800px;
+        overflow: hidden;
+    }
+
+    .Secound-animation-box {
+        display: flex;
+        max-width: 1920px;
+        width: 100%;
+        background-color: #ffffff;
+        height: 800px;
+    }
+
+    .left-animation-container {
+        display: flex;
+        align-items: center;
+        width: 99vw;
+        height: 100px;
+        background-color: #ffffff;
+        position: absolute;
+    }
+
+    .secound-left-animation-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+        background-color: #ffffff;
+        position: absolute;
+    }
+
+    .right-animation-body {
+        position: absolute;
+        display: flex;
+        overflow: hidden;
+        width: 99vw;
+        margin-top: 150px;
+        height: 650px;
+        background-color: #ffffff;
+    }
+
+    .animation-heading-text {
+        color: #000000;
+        font-size: 20px;
+        margin-left: 30px;
+        margin-top: 50px;
+        font-family: 'TTSupermolotNeue';
+    }
+
+    .animation-heading-text-secound {
+        color: #000000;
+        font-size: 20px;
+        margin-left: 30px;
+        margin-top: 50px;
+        font-family: 'TTSupermolotNeue';
+    }
+
+    br {
+        display: none;
+    }
+
+    .mech-icon-orbit {
+        position: absolute;
+        display: flex;
+        height: 80px;
+        width: 80px;
+        margin-top: 24px;
+        margin-left: 55px;
+        z-index: 99;
+    }
+
+    .ees-icon-orbit {
+        position: absolute;
+        display: flex;
+        height: 100px;
+        width: 100px;
+        margin-top: 250px;
+        margin-left: 55px;
+        z-index: 99;
+    }
+
+    .electricle-icon-orbit {
+        position: absolute;
+        display: flex;
+        height: 80px;
+        width: 80px;
+        margin-top: 130px;
+        margin-left: 270px;
+        z-index: 99;
+    }
+
+    .batery-icon-orbit {
+        position: absolute;
+        display: flex;
+        height: 100px;
+        width: 100px;
+        margin-top: 110px;
+        margin-left: 270px;
+        z-index: 99;
+    }
+
+    .electronics-icon-orbit {
+        position: absolute;
+        display: flex;
+        height: 80px;
+        width: 80px;
+        margin-top: 250px;
+        margin-left: 57px;
+        z-index: 99;
+    }
+
+    .gps-icon-orbit {
+        position: absolute;
+        display: flex;
+        height: 100px;
+        width: 100px;
+        margin-top: 360px;
+        margin-left: 270px;
+        z-index: 99;
+    }
+
+    .server-icon-orbit {
+        display: flex;
+        height: 80px;
+        width: 80px;
+        margin-top: 382px;
+        margin-left: 270px;
+        z-index: 99;
+    }
+
+    .platform-icon-orbit {
+        display: flex;
+        height: 100px;
+        width: 100px;
+        margin-top: 10px;
+        margin-left: 55px;
+        z-index: 99;
+    }
+
+    .secound-orbit-image {
+        display: flex;
+        height: 1400px;
+        width: 700px;
+        margin-top: 500px;
+    }
+
+    .orbit-image-first {
+        display: flex;
+        height: 1400px;
+        width: 700px;
+        margin-top: -180px;
+    }
+
+    .orbit-image-secound {
+        position: absolute;
+        height: 1400px;
+        width: 700px;
+        rotate: 110deg;
+    }
+
+    .orbit-image {
+        position: absolute;
+        width: 500px;
+        height: 500px;
+        rotate: 75deg;
+        margin-left: 100px;
+    }
+
+    .scroll-button {
+        position: absolute;
+        display: flex;
+        height: 20px;
+        opacity: 0.3;
+        width: 20px;
+        margin-left: 167px;
+        margin-top: 550px
+    }
+
+    .scroll-button-first {
+        display: flex;
+        height: 20px;
+        width: 20px;
+        position: absolute;
+        margin-top: 550px;
+        opacity: 0.3;
+        margin-left: 177px;
+        z-index: 100;
+    }
+
+    /* .feature-root-element{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    text-align: center;
+    width: 500px;
+    margin-left: 31px;
+   } */
+
+}
+
+@media screen and (max-height:620px) and (min-height:100px) {
+    .buttom-right-image{
+        display: none;
+    }
+}
+
+/* -----------------------------------------------------------------> */
+
+
+
+@keyframes scaleup {
+    0% {
+
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+        opacity: 0;
+    }
+
+    100% {
+
+
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+        opacity: 1;
+    }
+}

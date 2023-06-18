@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+}
+
+.container{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 98vh;
+}
+
+.one{
+    background-color: rgb(61, 114, 160);
+    height: 98vh;
+}   
+
+.two{
+    height: 90vh;
+    background-color: rgb(230, 241, 130);
+}
+
+.three{
+    height: 80vh;
+    background-color: rgb(167, 253, 117);
+}
+
+.four{
+    height: 50vh;
+    background-color: rgb(157, 69, 216);
+}
+
+.five{
+    height: 80vh;
+    background-color: rgb(247, 85, 179);
+}

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script def src="./script/tempIndex.js"></script>
+    <script type="text/javascript" src="./jquary/jquery-1.10.2.js"></script>
+    <script defer src="./script/script.js"></script>
+    <script src="./NavBar/navScript.js"></script>
+    <link rel="stylesheet" href="./style/tempIndex.css">
+    <link rel="stylesheet" href="./bootstrap/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="scroll-container" id="scroll-id" >
+        <div class="scroll-area" onscroll="myFunction()">
+            <div class="landing-header-container scroll-location">
+                <div class="landing-header-text-block">
+                    <div class="landing-header-welcome-text-block">
+                        <span class="landing-header-welcome-text">
+                            WELCOME TO
+                        </span>
+                    </div>
+                    <div class="landing-header-company-name-text-block">
+                        <span class="landing-header-company-name-text block">
+                            INFINITE ORBIT
+                        </span>
+                    </div>
+                    <div class="landing-header-company-name-text-block">
+                        <span class="landing-header-company-name-text">
+                            RESEARCH & DEVELOPMENT
+                        </span>
+                    </div>
+                    <div class="landing-header-about-us-button-block">
+                        <button class="about-us-button" onclick="redirectToAboutUsPage()">
+                            About Us
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="buttom-right-image-block">
+                <img src="./Images/desktop-bottom-left.png" class="buttom-right-image" alt="">
+            </div>
+            <div class="divider-line-block">
+                <hr class="divider-line">
+            </div>
+        </div>
+        <div class="scroll-area">
+            <div class="landing-who-we-are-container scroll-location">
+                <div class="landing-who-we-are-main-block">
+                    <div class="landing-who-we-are-header-block">
+                        <span class="landing-who-we-are-header-text">
+                            WHO WE ARE
+                        </span>
+                    </div>
+                    <div class="landing-who-we-are-text-block">
+                        <p class="landing-who-we-are-text">
+                            Infinite Orbit Research & Development (IORD) is an organization which has been focused on R&D activities in Transportation System, Electric Mobility, Energy and allied sectors for the past 10+ years. Knowing that our transportation industry is in the process of a once in a life-time transition, over the past few years, our team has focused our abilities on researching, improving and expediting this transition to E-Mobility. Through this intense research, we have developed a sustainable E-Mobility ecosystem that will not just help with this transition, but also thrive.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-area">
+            <div class="container-fluid">
+                <div class="divider-line-block">
+                    <hr class="divider-line">
+                </div>
+                <div class="parent-div scroll-location">
+                    <div class="image-grid">
+                        <div class="image image-grid-col-2 image-grid-row-2 show">
+                            <div class="center-text">
+                                <h2 class="image-text" id="batteryText">
+                                    About Us
+                                </h2>
+                            </div>
+                            <img src="../Images/img-1.jpg" id="myBattery" onload="loadImage()" alt="">
+                
+                        </div>
+                        <div class="image image-grid-col-3 image-grid-row-3">
+                            <div class="center-text">
+                                <h2 class="image-text-2">
+                                    Our Technology
+                                </h2>
+                            </div>
+                            <img src="../Images/img-2.png" alt="">
+                        </div>
+                        <!-- <div class="image">
+                            <div class="center-text">
+                                <h2 class="image-text-2">
+                                    IORD Network
+                                </h2>
+                            </div>
+                            <img src="../Images/img-2.png" alt="">
+                        </div> -->
+                        <div class="image">
+                            <div class="center-text">
+                                <h2 class="image-text-2">
+                                    Energy
+                                </h2>
+                            </div>
+                            <img src="./Images/energy-solar.png" alt="">
+                        </div>
+                        <div class="image">
+                            <div class="center-text">
+                                <h2 class="image-text-2">
+                                    Media
+                                </h2>
+                            </div>
+                            <img src="./Images/media-library.png" alt="">    
+                        </div>
+                        
+                    </div>
+        
+                </div>
+                <div class="rectangle-container">
+                    <div class="rectangle">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-area">
+            <div class="landing-animation-container scroll-location">
+                <div class="landing-animation-block">
+                    <div class="landing-animation-box">
+                        <div class="row animation-block-row">
+                            <div class="col-md-6 col-sm-12 left-block-col">
+                                
+                                <div class="text-container-block">
+                                    <div class="aspects-text-block" id="aspect-text-block-id">
+                                        <span class="aspects-text" id="aspect-text-id">
+                                            EV Engineering <br> Aspects
+                                        </span>
+                                    </div>
+                                    
+                                    <div class="topic-header-block" id="topic-header-id">
+                                        <span class="topic-header-text">
+                                            Mechanical
+                                        </span>
+                                    </div>
+                                    <div class="topic-block" id="topic-ul-id">
+                                        <ul class="topic-block-ul">
+                                            <li class="topic-block-li" id="first" onclick="first(this)">Chassi</li>
+                                            <li class="topic-block-li">Suspension</li>
+                                            <li class="topic-block-li">Battery</li>
+                                            <li class="topic-block-li">Wheel</li>
+                                        </ul>
+                                    </div>
+        
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-sm-12 right-block-col">
+        
+                                <div class="mech-orbit">
+                                    <img src="./Images/Mechanical-orbit.png" onclick="displayMech()" id="machanical-logo" class="orbit-logo" alt="">
+                                </div>
+                                <div class="mech-orbit-dark">
+                                    <img src="./Images/Mechanical-orbit-dark.png" onclick="displayMechDark()" id="machanical-logo-dark" class="orbit-logo" alt="">
+                                </div>
+                                <div class="electrical-orbit">
+                                    <img src="./Images/electrical-orbit.png" onclick="displayElectrical()" id="electrical-logo" class="orbit-logo" alt="">
+                                </div>
+                                <div class="electronics-orbit">
+                                    <img src="./Images/electronics-orbit.png" onclick="displayElectronic()" id="electronics-logo" class="orbit-logo" alt="">
+                                </div>
+                                <div class="server-orbit">
+                                    <img src="./Images/server-orbit.png" onclick="displayServer()" id="server-logo" class="orbit-logo" alt="">
+                                </div>
+                                <div class="circle">
+                                    <img src="./Images/Orbit.png" id="id-orbit" class="orbit-image" alt="">
+                                </div>
+                                <div class="white-background" id="white-background-id">
+                                    <div class="white-background-text-block">
+                                        <div class="white-text-block">
+                                            <span class="white-text" id="white-text-id">Aaa</span>
+                                        </div>
+                                        <div class="white-background-image-block">
+        
+                                        </div>
+                                        <div class="white-background-text-block">
+                                            <div class="text-block">
+                                                <p class="white-background-text">
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi exercitationem, suscipit atque aperiam unde totam dolores adipisci est maiores ab cumque velit commodi fuga nihil iste minus ea tempore quas.
+                                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi exercitationem, suscipit atque aperiam unde totam dolores adipisci est maiores ab cumque velit commodi fuga nihil iste minus ea tempore quas.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./bootstrap/bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

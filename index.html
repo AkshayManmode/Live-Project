@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="./jquary/jquery-1.10.2.js"></script>
+    <script defer src="./script/script.js"></script>
+    <script src="./NavBar/navScript.js"></script>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./bootstrap/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="./NavBar/nav.css" />
+    <link rel="stylesheet" href="./FixFooter/fixFooter.css" />
+
+    <title>Landing Page</title>
+</head>
+
+<body>
+    <div class="global-header-container" id="nav-bar-placeholder"></div>
+
+    <div class="scroll-container">
+        <div class="landing-header-container">
+            <div class="landing-header-text-block">
+                <div class="landing-header-welcome-text-block">
+                    <span class="landing-header-welcome-text"> WELCOME TO </span>
+                </div>
+                <div class="landing-header-company-name-text-block">
+                    <span class="landing-header-company-name-text block">
+                        INFINITE ORBIT
+                    </span>
+                </div>
+                <div class="landing-header-company-name-text-block">
+                    <span class="landing-header-company-name-text">
+                        RESEARCH & DEVELOPMENT
+                    </span>
+                </div>
+                <div class="landing-header-about-us-button-block">
+                    <button class="about-us-button" onclick="redirectToAboutUsPage()">
+                        About Us
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="buttom-right-image-block">
+            <img src="./Images/desktop-bottom-left.png" class="buttom-right-image" alt="" />
+        </div>
+        <div class="divider-line-block" id="divider-1">
+            <hr class="divider-line-1" />
+        </div>
+
+        <div class="landing-who-we-are-container">
+            <div class="landing-who-we-are-main-block">
+                <div class="landing-who-we-are-header-block">
+                    <span class="landing-who-we-are-header-text"> WHO WE ARE </span>
+                </div>
+                <div class="landing-who-we-are-text-block">
+                    <p class="landing-who-we-are-text">
+                        Infinite Orbit Research & Development (IORD) is an organization
+                        which has been focused on R&D activities in Transportation System,
+                        Electric Mobility, Energy and allied sectors for the past 10+
+                        years. Knowing that our transportation industry is in the process
+                        of a once in a life-time transition, over the past few years, our
+                        team has focused our abilities on researching, improving and
+                        expediting this transition to E-Mobility. Through this intense
+                        research, we have developed a sustainable E-Mobility ecosystem
+                        that will not just help with this transition, but also thrive.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <div class="divider-line-block" id="divider-2">
+                <hr class="divider-line-2" />
+            </div>
+            <div class="parent-div">
+
+                <div class="image-grid">
+                    <div class="one image image-grid-col-2 image-grid-row-2 show" onmouseleave="gridOut1()"
+                        onmouseover="gridHover1()" onclick="openBattery()">
+                        <div class="center-text">
+                            <h2 class="image-text" id="batteryText">Our Battery</h2>
+                        </div>
+                        <div class="line-div1">
+                            <hr class="line1">
+                        </div>
+                    </div>
+                    <div class="two image" onmouseleave="gridOut2()" onmouseover="gridHover2()" onclick="openCell()">
+                        <div class="center-text">
+                            <h2 class="image-text-2" id="cellText">Our Cell</h2>
+                        </div>
+                        <div class="line-div2">
+                            <hr class="line2">
+                        </div>
+                    </div>
+                    <div class="new image" onmouseleave="gridOutNew()" onmouseover="gridHoverNew()"
+                        onclick="openEnergyPark()">
+                        <div class="center-text">
+                            <h2 class="image-text-2" id="energyParkText">Energy Park</h2>
+                        </div>
+                        <div class="line-divNew">
+                            <hr class="lineNew">
+                        </div>
+                    </div>
+
+                    <div class="three image" onmouseleave="gridOut3()" onmouseover="gridHover3()" onclick="openEES()">
+                        <div class="center-text">
+                            <h2 class="image-text-2" id="eesText">EES</h2>
+                        </div>
+                        <div class="line-div3">
+                            <hr class="line3">
+                        </div>
+                    </div>
+                    <div class="four image" onmouseleave="gridOut4()" onmouseover="gridHover4()"
+                        onclick="openIordNetwork()">
+                        <div class="center-text">
+                            <h2 class="image-text-2" id="iordNetworkText">Iord Network</h2>
+                        </div>
+                        <div class="line-div4">
+                            <hr class="line4">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="rectangle-container">
+                <div class="rectangle"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="divider-line-block" id="divider-3">
+        <!-- <hr class="divider-line-3"> -->
+    </div>
+    
+    <!-- *** Gaurav this is the block where you have to do changes *** -->
+
+    <div class="landing-animation-container" id="scroll-getid-First">
+        <div class="landing-animation-block">
+            <div class="landing-animation-box">
+                <!-- Gaurav code... -->
+                <div class="left-animation-container" id="left-animation-container">
+                    <div class="animation-heading-text" id="animation-heading-text">
+                        EV Engineering<br />
+                        Aspects
+                    </div>
+
+                    <div class="hide-body-first-container" id="hide-body-first-container" style="visibility: hidden">
+                        <div id="animation-heading-text-hide">EV Engineering Aspects</div>
+
+                        <div class="componat-ul-block">
+                            <div class="main-componant-headline" id="main-componant-headline">
+                                MECHANICLE
+                            </div>
+
+                            <div class="componants-text" id="mechcomponanats" style="visibility: hidden">
+                                <ul>
+                                    <li class="component-text-li" id="Chassietext" onmouseover="removeSusp()" onclick="chassiesclick()">
+                                        Chassie
+                                    </li>
+                                    <li class="component-text-li" id="suspensiontext" onclick="suspensiontextclick()">
+                                        Suspension
+                                    </li>
+                                    <li class="component-text-li" id="battery" onclick="batteryclick()">
+                                        Battery
+                                    </li>
+                                    <li class="component-text-li" id="wheelstexts" onclick="wheelstextsclick()">
+                                        Wheels
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="componants-text-electricle" id="elecriclecomponanats"
+                                style="visibility: hidden">
+                                <ul>
+                                    <li class="component-text-li" id="wireharness" onclick="wireharnessclick()">
+                                        Wiring Harness
+                                    </li>
+                                    <li class="component-text-li" id="display" onclick="displayclick()">
+                                        Display/ Dashboard
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="componants-text-electronics" id="electronicscomponanats"
+                                style="visibility: hidden">
+                                <ul>
+                                    <li class="component-text-li" id="gpstracking" onclick="gpstrackingclick()">
+                                        GPS Tracking
+                                    </li>
+                                    <li class="component-text-li" id="controller" onclick="controllerclick()">
+                                        Controller
+                                    </li>
+                                    <li class="component-text-li" id="bmcs" onclick="bmcsclick()">
+                                        BMCS
+                                    </li>
+                                    <li class="component-text-li" id="powerassistance" onclick="powerassistanceclick()">
+                                        Power Assistance
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="componants-text-server" id="servercomponanats" style="visibility: hidden">
+                                <ul>
+                                    <li class="component-text-li" id="user-application"
+                                        onclick="user_applicationclick()">
+                                        User Application
+                                    </li>
+                                    <li class="component-text-li" id="widegt" onclick="widegtclick()">
+                                        Widget
+                                    </li>
+                                    <li class="component-text-li" id="ai-protocol" onclick="ai_protocolclick()">
+                                        Ai Protocol
+                                    </li>
+                                    <li class="component-text-li" id="autorecovery" onclick="autorecoveryclick()">
+                                        Auto Recovery
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right-animation-body" id="right-animation-body">
+                    <div class="right-hide-container" id="orbit-first-container">
+                        <div class="mech-icon-orbit">
+                            <img class="icon-click-hover" id="mech-icon-orbit-image" src="./Images/MECHANICLE.png"
+                                alt="" onclick="mech_icon_click()" />
+                        </div>
+                        <div class="electricle-icon-orbit">
+                            <img class="icon-click-hover" id="electricle-icon-orbit-image" src="./Images/ELECTRICLE.png"
+                                alt="" onclick="electricle_icon_click()" />
+                        </div>
+                        <div class="electronics-icon-orbit">
+                            <img class="icon-click-hover" id="electronics-icon-orbit-image"
+                                src="./Images/ELECTRONIC.png" alt="" onclick="electronics_icon_click()" />
+                        </div>
+                        <div class="server-icon-orbit">
+                            <img class="icon-click-hover" id="server-icon-orbit-image" src="./Images/SERVER.png" alt=""
+                                onclick="server_icon_click()" />
+                        </div>
+                        <div class="orbit-image" id="orbit-image">
+                            <img class="orbit-image-first" src="./Images/Orbit.png" alt="" />
+                        </div>
+                        <div class="scroll-button" id="scroll-button" onclick="scroll_button()">
+                            <img id="scroll-visible" src="./Images/ScrollButton.png" alt="" />
+                        </div>
+                    </div>
+
+                    <div id="circle_hide_class" style="visibility: hidden">
+                        <div class="circle-hide-box" id="circle-box-visibility">
+                            <div class="circle-draw"></div>
+
+                            <div class="orbit-under-icon">
+                                <img class="icon-click-hover" src="./Images/back_button.png" alt=""
+                                    onclick="mech_orbit_click()" />
+                            </div>
+                            <div class="compoinant-undermain-text" id="compoinant-undermain-text"></div>
+                            <div class="componant-image" id="componant-unbder-image" style="visibility: hidden">
+                                <img id="main-componant-image" src="" alt="" />
+                            </div>
+                            <div class="componant-under-discription" id="componant-under-discription">
+                                <!-- ----------------------------------- Mechanical -----------------------------------
+                                        quisquam temporibus rem? Magnam in quisquam ullam aperiam optio mollitia ipsum. Omnis
+                                        magnam perspiciatis, ut modi voluptatibus eaque?
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates ad veritatis omnis
+                                        iusto facere, similique assumenda doloremque unde deserunt qui porro placeat quidem!
+                                        Nihil consequuntur est omnis ex aliquam consectetur!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus distinctio nostrum
+                                        nisi aperiam aspernatur, quibusdam totam, voluptatum suscipit reprehenderit eius
+                                        quisquam perferendis sapiente impedit maiores quaerat repellat eum? Obcaecati, quam!
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus veniam magni porro
+                                        neque ad rem, quos corporis sit iure velit soluta, excepturi et accusantium sint! Totam
+                                        tenetur amet non soluta.
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem voluptatibus,
+                                        at in error, amet sed iure aliquam, recusandae molestiae provident non? Voluptas fugit
+                                        suscipit aspernatur adipisci dolor veritatis aliquam maiores. -->
+                            </div>
+                            <div class="componant-under-sub-discription" id="componant-under-sub-discription"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Shubham Code -------- -->
+
+                <div class="orbit-container-s" id="orbit-container-s" style="visibility: hidden">
+                    <div class="header-container-s">
+                        <div class="background-curve-s">
+                            <div class="orbit-header-text-block">
+                                <h6 class="orbit-header-text" id="orbit-header-text"></h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="logo-block">
+                        <img class="icon-click-hover" src="./Images/back_button.png" onclick="mech_orbit_click()" class="logo-icons" alt="" />
+                    </div>
+
+                    <!--  -->
+                    <div class="feature-nav-block">
+                        <ul class="feature-nav-ul" id="mech-mobile-componants" style="visibility: hidden">
+                            <li class="feature-nav-li" id="Chassietext-Mobile" onclick="mobileChassies()">
+                                Chassi
+                            </li>
+                            <li class="feature-nav-li" id="suspensiontext-Mobile" onmouseover="removeSusp()" onclick="SuspensionMobile()">
+                                Suspension
+                            </li>
+                            <li class="feature-nav-li" id="battery-Mobile" onclick="BatteryMobile()">
+                                Battery
+                            </li>
+                            <li class="feature-nav-li" id="wheelstexts-Mobile" onclick="WheelsMobile()">
+                                Wheels
+                            </li>
+                        </ul>
+
+                        <ul class="feature-nav-ul-secound" id="feature-nav-ul-secound" style="visibility: hidden">
+                            <li class="feature-nav-li" id="wireharness-Mobile" onclick="mobilewireharness()">
+                                wireharness
+                            </li>
+                            <li class="feature-nav-li" id="display-Mobile" onclick="displayMobile()">
+                                Display
+                            </li>
+                        </ul>
+
+                        <ul class="feature-nav-ul-third" id="feature-nav-ul-third" style="visibility: hidden">
+                            <li class="feature-nav-li-third" id="gpstrackingmobile" onclick="gpsChassies()">
+                                GPS
+                            </li>
+                            <li class="feature-nav-li-third" id="controllermobile" onclick="controllerMobile()">
+                                Controller
+                            </li>
+                            <li class="feature-nav-li-third" id="bmcsmobile" onclick="bmcsMobile()">
+                                BMCS
+                            </li>
+                            <li class="feature-nav-li-third" id="powerassistancemobile" onclick="powerMobile()">
+                                Power Assistance
+                            </li>
+                        </ul>
+
+                        <ul class="feature-nav-ul-four" id="feature-nav-ul-four" style="visibility: hidden">
+                            <li class="feature-nav-li-four" id="Application-mobile" onclick="ApplicationRecovery()">
+                                Application
+                            </li>
+                            <li class="feature-nav-li-four" id="Widget-mobile" onclick="WidgetMobile()">
+                                Widget
+                            </li>
+                            <li class="feature-nav-li-four" id="Ai-mobile" onclick="AiMobile()">
+                                Ai
+                            </li>
+                            <li class="feature-nav-li-four" id="Auto-Recovery-mobile" onclick="RecoveryMobile()">
+                                AutoRecovery
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-element-block">
+                        <div class="feature-element-image-block">
+                            <div class="feature-element-image">
+                                <img id="mobile-coponant-image" src="" alt="" style="visibility: hidden" />
+                            </div>
+                        </div>
+
+                        <div class="main-componant-text" id="main-componant-text">
+                            <p id="main-text"></p>
+                        </div>
+
+
+                        <div id="feature-temt-id" class="feature-element-text-block">
+                            <!-- <p class="feature-root-element" id="root-element">
+                 -------mechanical IORD----- Richard McClintock, a Latin scholar from Hampden-Sydney College, is with discovering the source.- Richard McClintock, a Latin scholar from Hampden-Sydney College, is with discovering the source. -->
+                            </p>
+                            <p class="" id="feature-element-text-block-id" style="visibility: hidden;">
+                                <!-- had same class (feature-element-text-block) -->
+                                <!-- Richard McClintock, a Latin scholar from Hampden-Sydney College, is with discovering the source. -->
+                            </p>
+                            <!-- <span class="read-more">Read More</span> -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Shubham Code End -------- -->
+            </div>
+        </div>
+        <!--  Coustum Bar---------------------- -->
+        <div class="costum-bar-container">
+            <div class="costum-bar-box">
+                <div class="costum-bar">
+                    <div class="costum-bar-maintext">
+                        We Developed <br />
+                        Complete EV Ecosystem
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Secound Div ---------------------------------------------------------------------------------------------->
+
+        <div class="Secound-animation-block" id="scroll-getid">
+            <div class="Secound-animation-box">
+                <!-- omkar kadam... -->
+                <div class="secound-left-animation-container" id="hide-container-secound">
+                    <div class="animation-heading-text-secound" id="animation-heading-text-secound">
+                        EV Ecosystem
+                    </div>
+
+                    <div class="hide-body-secound-container" id="hide-body-secound-container"
+                        style="visibility: hidden">
+                        <div id="animation-heading-text-hide-secound">
+                            EV Engineering Aspects
+                        </div>
+                        <div class="componat-ul-block-secound">
+                            <div class="main-componant-headline-secound" id="main-componant-headline-secound">
+                                MECHANICLE
+                            </div>
+
+                            <div class="componants-text-ees" id="eescomponants" style="visibility: hidden">
+                                <!-- previous class name : second-componants-text -->
+                                <ul>
+                                    <li class="component-text-li" id="ees-menu1" onclick="ees_menu_1()">
+                                        Ees Menu1
+                                    </li>
+                                    <li class="component-text-li" id="ees-menu2" onclick="ees_menu_2()">
+                                        Ees Menu2
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="componants-text-iobattery" id="iobatterycomponanats" style="visibility: hidden">
+                                <ul>
+                                    <li class="component-text-li" id="iobattery_menu1" onclick="iobattery_menu1()">
+                                        Battery Menu1
+                                    </li>
+                                    <li class="component-text-li" id="iobattery_menu2" onclick="iobattery_menu2()">
+                                        Battery Menu2
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="componants-text-gps" id="gpscomponanats" style="visibility: hidden">
+                                <ul>
+                                    <li class="component-text-li" id="gpsmenu1" onclick="gpsmenu1()">
+                                        gps menu1
+                                    </li>
+                                    <li class="component-text-li" id="gpsmenu2" onclick="gpsmenu2()">
+                                        gps menu2
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="componants-text-ioplatform" id="ioplatformomponanats"
+                                style="visibility: hidden">
+                                <ul>
+                                    <li class="component-text-li" id="ioplatform_menu1" onclick="ioplatform_menu1()">
+                                        ioplatform_menu1
+                                    </li>
+                                    <li class="component-text-li" id="ioplatform_menu2" onclick="ioplatform_menu2()">
+                                        ioplatform_menu2
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right-animation-body" id="secound-right-animation-body">
+                    <div class="right-hide-container" id="orbit-secound-container">
+                        <div class="ees-icon-orbit">
+                            <img class="icon-click-hover" id="ees-icon-orbit-image" src="./Images/EES.png" alt=""
+                                onclick="ees_icon_click()" />
+                        </div>
+
+                        <div class="batery-icon-orbit">
+                            <img class="icon-click-hover" id="iobattery-icon-orbit-image" src="./Images/IOBATTERY.png"
+                                alt="" onclick="iobattery_icon_click()" />
+                        </div>
+
+                        <div class="gps-icon-orbit">
+                            <img class="icon-click-hover" id="gps-icon-orbit-image" src="./Images/ev gps.png" alt=""
+                                onclick="gps_icon_click()" />
+                        </div>
+                        <div class="platform-icon-orbit">
+                            <img class="icon-click-hover" id="ioplatform-icon-orbit-image" src="./Images/ioplatform.png"
+                                alt="" onclick="ioplatform_icon_click()" />
+                        </div>
+                        <div class="scroll-button-first" id="secound-scroll-first" onclick="scroll_button_first()" >
+                            <img src="./Images/ScrollButtonUP.png" alt="" />
+                        </div>
+                        <div class="secound-orbit-image" id="secound-orbit-image">
+                            <img class="orbit-image-secound" src="./Images/Orbit.png" alt="" />
+                        </div>
+                        <!-- <div class="secound-scroll" id="scroll-button-first" onclick="scroll_button_first()">
+                            <img id="scroll-visible" src="./Images/ScrollButton.png" alt="" />
+                        </div> -->
+
+
+                    </div>
+
+                    <div id="secound-circle_hide_class" style="visibility: hidden">
+                        <div class="secound-circle-hide-box" id="circle-box-visibility">
+                            <div class="circle-draw-secound"></div>
+
+                            <div class="secound-orbit-under-icon">
+                                <img class="icon-click-hover" src="./Images/back_button.png" alt=""
+                                    onclick="secound_orbit_click()" />
+                            </div>
+
+                            <div class="compoinant-undermain-text-secound" id="compoinant-undermain-text-secound"></div>
+                            <div class="componant-image-secound" id="componant-unbder-image-secound"
+                                style="visibility: hidden">
+                                <img id="main-componant-image-secound" src="" alt="" />
+                            </div>
+                            <div class="secound-componant-under-discription" id="secound-componant-under-discription">
+                                <!-- IO  Platform ---------Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione provident vero pariatur
+                                        quisquam temporibus rem? Magnam in quisquam ullam aperiam optio mollitia ipsum. Omnis
+                                        magnam perspiciatis, ut modi voluptatibus eaque?
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates ad veritatis omnis
+                                        iusto facere, similique assumenda doloremque unde deserunt qui porro placeat quidem!
+                                        Nihil consequuntur est omnis ex aliquam consectetur!
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus distinctio nostrum
+                                        nisi aperiam aspernatur, quibusdam totam, voluptatum suscipit reprehenderit eius
+                                        quisquam perferendis sapiente impedit maiores quaerat repellat eum? Obcaecati, quam!
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus veniam magni porro
+                                        neque ad rem, quos corporis sit iure velit soluta, excepturi et accusantium sint! Totam
+                                        tenetur amet non soluta.
+                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem voluptatibus,
+                                        at in error, amet sed iure aliquam, recusandae molestiae provident non? Voluptas fugit
+                                        suscipit aspernatur adipisci dolor veritatis aliquam maiores. -->
+                            </div>
+                            <div class="componant-under-sub-discription-secound"
+                                id="componant-under-sub-discription-secound"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Omkar Code Start -->
+
+            <div class="second-orbit-container-s" id="second-orbit-container-s" style="visibility: hidden">
+                <div class="second-header-container-s">
+                    <div class="second-background-curve-s">
+                        <div class="second-orbit-header-text-block">
+                            <h6 class="second-orbit-header-text" id="second-orbit-header-text"></h6>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="second-logo-block">
+                    <img class="icon-click-hover" src="./Images/back_button.png" onclick="secound_icon_click()" class="second-logo-icons"
+                        alt="" />
+                </div>
+
+                <!--  -->
+                <div class="feature-nav-block" id="feature-nav-block">
+                    <ul class="second-feature-nav-ul" id="ioplat-mobile-componants" style="visibility: hidden">
+                        <li class="second-feature-nav-li" id="ioplatform" class="component-text-li"
+                            onclick="ioplatform1()">
+                            IO platform1
+                        </li>
+                        <li class="second-feature-nav-li" id="ioplatform2" class="component-text-li"
+                            onclick="ioplatform2()">
+                            IO platform2
+                        </li>
+                    </ul>
+
+                    <ul class="second-feature-nav-ul-secound" id="second-feature-nav-ul-secound"
+                        style="visibility: hidden">
+                        <li class="second-feature-nav-li" id="Battery_Menu1" class="component-text-li"
+                            onclick="Battery_Menu1()">
+                            Battery Menu1
+                        </li>
+                        <li class="second-feature-nav-li" id="Battery_Menu2" class="component-text-li"
+                            onclick="Battery_Menu2()">
+                            Battery Menu2
+                        </li>
+                    </ul>
+
+                    <ul class="second-feature-nav-ul-third" id="second-feature-nav-ul-third" style="visibility: hidden">
+                        <li class="second-feature-nav-li" id="EV_GPS1" class="component-text-li" onclick="EVGPS1()">
+                            EV GPS1
+                        </li>
+                        <li class="second-feature-nav-li" id="EVGPS2" class="component-text-li" onclick="EVGPS2()">
+                            EV GPS2
+                        </li>
+                    </ul>
+
+                    <ul class="second-feature-nav-ul-four" id="feature-nav-ul-four-Mobile" style="visibility: hidden">
+                        <li class="second-feature-nav-li" id="EES1" class="component-text-li" onclick="EES1()">
+                            EES Menu1
+                        </li>
+                        <li class="second-feature-nav-li" id="EES2" class="component-text-li" onclick="EES2()">
+                            EES Menu2
+                        </li>
+                    </ul>
+                </div>
+
+
+                <div class="feature-element-block">
+                    <div class="feature-element-image-block">
+                        <div class="feature-element-image" id="feature-element-image-id">
+                            <img class="second-mobile-coponant-image" id="second-mobile-coponant-image" src="" alt=""
+                                style="visibility: hidden" />
+                        </div>
+                    </div>
+
+                    <div class="main-componant-text-second" id="main-componant-text-second">
+                        <p id="main-text-second"></p>
+                    </div>
+
+                    <div class="feature-element-text-block">
+                        <p class="feature-element-text-class" id="feature-element-text-block">
+                            <!-- Richard McClintock, a Latin scholar from Hampden-Sydney College,
+                is with discovering the source. -->
+                        </p>
+                        <!-- <span class="read-more">Read More</span> -->
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- Omkar Code End -->
+        </div>
+
+        <!-- Gaurav End Here -->
+    </div>
+
+    <div class="footer-container" id="footer-placeholder"></div>
+    <script>
+        $(function () {
+            $("#nav-bar-placeholder").load("./NavBar/nav.html");
+        });
+        $(function () {
+            $("#footer-placeholder").load("./FixFooter/fixFooter.html");
+        });
+    </script>
+    <script src="./bootstrap/bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

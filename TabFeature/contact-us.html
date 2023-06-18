@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="text/javascript" src="../jquary/jquery-1.10.2.js"></script>
+
+    <link rel="stylesheet" href="../style/contact-us.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <link rel="stylesheet" href="../NavBar/nav.css">
+    <link rel="stylesheet" href="../FixFooter/fixFooter.css">
+
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <div class="global-header-container" id="nav-bar-placeholder">
+    </div>
+
+    <div class="container-fluid">
+        <div class="contact-us-container">
+            <div class="contact-us-block">
+                <div class="row contact-us-row">
+
+                    <div class="col-md-6 contact-left" id="two">
+                        <div class="address-detail-container">
+                            <div class="text-content">
+                                <div class="contact-address-1">
+                                    <div class="address-icon-block">
+                                        <img src="../Images/Location.png" class="contact-icons" alt="">
+                                    </div>
+                                </div>
+                                <div class="contact-address-text-1">
+                                    <div class="address-header-title-block">
+                                        <h5 class="address-header-title">
+                                            Corporate Plaza
+                                        </h5>
+                                    </div>
+                                    <div class="address-header-para-block">
+                                        <p class="address-header-para">
+                                            Senapati Bapat Road , Near Chattushringi
+                                            Gokhalenagar, Pune, Maharashtra 411016
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                            <div class="text-content">
+                                <div class="contact-address">
+                                    <div class="address-icon-block">
+                                        <img src="../Images/Email.png" class="contact-icons" alt="">
+                                    </div>
+                                </div>
+                                <div class="contact-address-text">
+                                    <div class="address-header-para-block">
+                                        <p class="address-header-para">
+                                            xyz@gmail.com
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text-content">
+                                <div class="contact-address">
+                                    <div class="address-icon-block">
+                                        <img src="../Images/Contact.png" class="contact-icons" alt="">
+                                    </div>
+                                </div>
+                                <div class="contact-address-text">
+                                    <div class="address-header-para-block">
+                                        <p class="address-header-para">
+                                            +91 1234567890
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 contact-right" id="one">
+                        <div class="contact-form-block">
+                            <div class="contact-us-header-block">
+                                <h2 class="contact-us-header">
+                                    Contact Us
+                                </h2>
+                            </div>
+                            <hr class="divider-line">
+                            <form class="contact-form" action="">
+                                <div class="contact-us-details">
+                                    <div class="detail-label">
+                                        <label for="username">Name</label>
+                                    </div>
+                                    <div class="detail-input">
+                                        <input type="text" id="username-id" name="username" class="detail-contant"
+                                            placeholder="Your name">
+                                    </div>
+                                </div>
+                                <div class="contact-us-details">
+                                    <div class="detail-label">
+                                        <label for="username">Phone</label>
+                                    </div>
+                                    <div class="detail-input">
+                                        <input type="text" id="username-id" name="username" class="detail-contant"
+                                            placeholder="Contact Number">
+                                    </div>
+                                </div>
+                                <div class="contact-us-details">
+                                    <div class="detail-label">
+                                        <label for="username">Email</label>
+                                    </div>
+                                    <div class="detail-input">
+                                        <input type="text" id="username-id" name="username" class="detail-contant"
+                                            placeholder="Email Id">
+                                    </div>
+                                </div>
+                                <div class="contact-us-details">
+                                    <div class="detail-label">
+                                        <label for="username">Your Message</label>
+                                    </div>
+                                    <div class="detail-input">
+                                        <textarea name="" id="" placeholder="Your message"
+                                            class="detail-contant-message" rows="3"></textarea>
+                                    </div>
+                                </div>
+                                <div class="contact-us-submit">
+                                    <input type="submit" class="submit-button" value="Submit">
+                                </div>
+                            </form>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="footer-container" id="footer-placeholder">
+    </div>
+
+
+    <script>
+        $(function () {
+            $("#nav-bar-placeholder").load("../NavBar/nav.html");
+        });
+        $(function () {
+            $("#footer-placeholder").load("../FixFooter/fixFooter.html");
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

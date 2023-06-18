@@ -1,0 +1,313 @@
+@font-face {
+    font-family: "ManropeRegular";
+    src: url(../Fonts/Manrope-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'ManropeBold';
+    src: url(../Fonts/Manrope-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'ManropeMedium';
+    src: url(../Fonts/Manrope-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'ManropeSemi';
+    src: url(../Fonts/Manrope-SemiBold.ttf);
+}
+  
+
+@font-face {
+    font-family: "TTSupermolotNeue";
+    src: url(../Fonts/TTSupermolotNeue-ExpDBold.ttf);
+}
+
+
+.header-image-block{
+    height: 500px;
+    background-image: url('../HeaderImage/career-header-image.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 500px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: end;
+    padding-bottom: 64px;
+    padding-left: 64px;
+}
+
+.header-title-text{
+    font-family: 'TTSupermolotNeue';
+    font-weight: 600;
+    font-size: 32px;
+    color: white;
+}
+
+.career-header-text-block{
+	display: flex;
+	justify-content: center;
+}
+
+.career-header-text{
+	font-family: 'ManropeRegular';
+}
+
+.career-header-para-block{
+	margin-top: 64px;
+	margin-bottom: 64px;
+	width: 80vw;
+}
+
+.perks-img-container{
+    display: flex;
+    justify-content: center;
+}
+
+.perks-img{
+    object-fit: contain;
+    height: 300px;
+    width: auto;
+}
+
+.career-multi-text{
+    color: gray;
+    font-weight: 500;
+    font-size: 50px;
+    font-family: "ManropeRegular";
+}
+
+.iord-name-text{
+    color: black;
+    font-size: 63px;
+    font-family: "ManropeBold";
+    /* background: rgb(28,41,162);
+    background: linear-gradient(117deg, rgba(28,41,162,1) 50%, rgba(59,207,94,1) 50%); */
+
+}
+
+.career-text-3{
+    width: 500px;
+    margin-bottom: 0px;
+}
+
+.career-text-4{
+    font-size: 22px;
+}
+
+.infinite-text{
+    color: #1C29A2;
+    font-size: 35px;
+
+}
+
+.career-contact-button{
+    width: 160px;
+    height: 33px;
+    border-color: transparent;
+    background-color: #131313;
+    color: white;
+}
+
+.career-black-div-block{
+    margin-top: 64px;
+    display: flex;
+    justify-content: center;
+    background-color: #131313;
+    background-image: url("../galaxy/red.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.career-black-block{
+    width: 80vw;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+    
+    font-family: "ManropeRegular";
+}
+
+.career-dark-back-text{
+    background-color: #3d353531;
+
+}
+
+.career-oppertunity-block{
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+.career-advertise-block{
+    padding-top: 32px;
+}
+
+.career-oppertunity-header-block{
+    margin-top: 32px;
+}
+
+.career-oppertunity-header{
+    text-align: center;
+    font-size: 32px;
+}
+
+.accor{
+    /* width: 100%; */
+    /* background-color: #eee; */
+    border-bottom: 1px solid #131313;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    /* margin-bottom: 16px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.accor-header{
+    padding-left: 16px;
+    /* padding-top:8px; */
+    margin-bottom: 0px;
+    font-size: 18px;
+    font-family: "ManropeBold";
+}
+
+.plus-img{
+    height: 24px;    
+    width: 24px;
+    margin-right: 18px;    
+}
+
+.accor-one-line{
+    padding-left: 16px;
+    padding-top:8px;
+    font-family: "ManropeMedium";
+    font-size: 18px;
+}
+
+.accor:hover{
+    /* background-color: #ccc; */
+    cursor: pointer;
+}
+
+.panel1 {
+    padding: 16px 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.panel2 {
+    padding: 16px 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.panel3 {
+    padding: 16px 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.panel4 {
+    padding: 16px 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.career-contact-us{
+    border-color: transparent;
+	cursor: pointer;
+    background-color: black;
+    color: white;
+    width: 150px;
+    height: 40px;
+}
+
+@media screen and (max-width:1100px) {
+    .career-text-3 {
+        width: 100%;
+    }
+
+    .career-multi-text-block{
+        margin-top: 32px;
+    }
+}
+
+@media screen and (max-width:900px) and (min-width:561px) {
+    .perks-img{
+        height: 260px;
+    }
+
+    .career-multi-text-block{
+        margin-top: 32px;
+    }
+
+
+}
+
+@media screen and (max-width:560px) and (min-width:200px){
+
+    .career-text-3 {
+        width: 80vw;
+    }
+
+    .perks-img {
+        object-fit: contain;
+        height: auto;
+        width: 90vw;
+    }
+
+    .career-multi-text {
+        font-size: 30px;
+    }
+
+    .career-text-3{
+        width: 90vw;
+    }
+
+    .career-text-4{
+        padding-top: 8px;
+    }
+
+    .accor{
+        margin: 0px 20px;
+    }
+
+    .panel1 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .panel2 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .panel3 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .panel4 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}

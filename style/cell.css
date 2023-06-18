@@ -1,0 +1,607 @@
+@font-face {
+    font-family: "ManropeRegular";
+    src: url(../Fonts/Manrope-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'ManropeBold';
+    src: url(../Fonts/Manrope-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'ManropeMedium';
+    src: url(../Fonts/Manrope-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'ManropeSemi';
+    src: url(../Fonts/Manrope-SemiBold.ttf);
+}
+
+
+@font-face {
+    font-family: "TTSupermolotNeue";
+    src: url(../Fonts/TTSupermolotNeue-ExpDBold.ttf);
+}
+
+.container-fluid {
+    display: flex;
+    justify-content: center;
+}
+
+.holding-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1920px;
+    width: 100%;
+}
+
+.header-image-block {
+    height: 500px;
+    background-image: url('../HeaderImage/1920.jpg');
+    background-repeat: no-repeat;
+    /* background-size: 100% 500px; */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: end;
+    padding-bottom: 64px;
+    padding-left: 64px;
+}
+
+.header-title-text {
+    font-family: 'TTSupermolotNeue';
+    font-weight: 600;
+    font-size: 32px;
+    color: #131313;
+    cursor: default;
+}
+
+.topic-main-description-block {
+    margin-top: 64px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 64px;
+    cursor: default;
+}
+
+.topic-main-description {
+    font-size: 18px;
+    font-family: 'ManropeRegular';
+}
+
+.divider-line-block {
+    display: flex;
+    justify-content: center;
+}
+
+.divider-line-1 {
+    display: none;
+    /* border: 0.5px solid #afafaf;
+    width: 80vw; */
+}
+
+.divider-line-1.show {
+    display: block;
+    position: absolute;
+    /* border: 0.5px solid #afafaf; */
+    border: 0.5px solid #131313;
+    width: 80vw;
+    animation: increase 0.5s forwards;
+}
+
+.divider-line-2 {
+    display: none;
+    /* border: 0.5px solid #afafaf;
+    width: 80vw; */
+}
+
+.divider-line-2.show {
+    display: block;
+    position: absolute;
+    /* border: 0.5px solid #afafaf; */
+    border: 0.5px solid #131313;
+    width: 80vw;
+    animation: increase 0.5s forwards;
+}
+
+.divider-line-3 {
+    display: none;
+    /* border: 0.5px solid #afafaf;
+    width: 80vw; */
+}
+
+.divider-line-3.show {
+    display: block;
+    position: absolute;
+    /* border: 0.5px solid #afafaf; */
+    border: 0.5px solid #131313;
+    width: 80vw;
+    animation: increase 0.5s forwards;
+}
+
+.innovation-block {
+    margin-top: 64px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 64px;
+}
+
+.innovation-header-text {
+    opacity: 0;
+}
+
+.innovation-header-text.show {
+    opacity: 1;
+    color: #313131;
+    font-weight: 600;
+    font-size: 32px;
+    font-family: 'TTSupermolotNeue';
+    animation: fadeIn 3s forwards;
+    -webkit-animation: fadeIn 2s forwards;
+    -moz-animation: fadeIn 2s forwards;
+    -o-animation: fadeIn 2s forwards;
+    cursor: default;
+}
+
+.innovation-header-block {
+    text-align: center;
+}
+
+.innovation-text-block {
+    padding-top: 32px;
+}
+
+.innovation-text {
+    opacity: 0;
+    /* font-family: 'ManropeRegular'; */
+}
+
+.innovation-text.show {
+    /* display: block; */
+    opacity: 1;
+    font-family: 'ManropeRegular';
+    animation: fadeIn 0.5s forwards;
+    font-size: 18px;
+    -webkit-animation: fadeIn 0.5s forwards;
+    -moz-animation: fadeIn 0.5s forwards;
+    -o-animation: fadeIn 0.5s forwards;
+    /* -ms-transition: fadeIn 0.5s forwards; */
+    cursor: default;
+}
+
+.feature-text {
+    color: #414141;
+    font-family: 'ManropeRegular';
+}
+
+.feature-block {
+    background-color: #131313;
+    padding-top: 64px;
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-bottom: 189px;
+}
+
+.feature-header-block {
+    padding-top: 8px;
+    font-family: 'ManropeBold';
+    text-align: start;
+}
+
+.feature-heading-text {
+    font-family: 'ManropeRegular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    color: white;
+    cursor: default;
+}
+
+.feature-heading-sub-text {
+    font-family: 'TTSupermolotNeue';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    color: #D8D8D8;
+    cursor: default;
+
+}
+
+.feature-para-text-block {
+    margin-top: 24px;
+    cursor: default;
+
+}
+
+.feature-para-text {
+    font-family: 'ManropeRegular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: white;
+    cursor: default;
+
+}
+
+.new-div {
+    position: relative;
+    margin-top: -290px;
+}
+
+.gray-color {
+    height: 154px;
+    background-color: #F4F4F4;
+}
+
+.feature-card-block {
+    display: flex;
+    justify-content: center;
+
+}
+
+.feature-card-row {
+    /* opacity: 0; */
+    max-width: 1920px;
+    width: 85%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    /* animation: cardFadeIn 0.5s forwards;
+    -webkit-animation: cardFadeIn 0.5s forwards;
+    -moz-animation: cardFadeIn 0.5s forwards;
+    -o-animation: cardFadeIn 0.5s forwards; */
+}
+
+/* .feature-card-row.show {
+    opacity: 1;
+    max-width: 1920px;
+    width: 85%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    animation: cardFadeIn 0.5s forwards;
+    -webkit-animation: cardFadeIn 0.5s forwards;
+    -moz-animation: cardFadeIn 0.5s forwards;
+    -o-animation: cardFadeIn 0.5s forwards;
+} */
+
+.card-background{
+    opacity: 0;
+}
+
+.card-background.show{
+    opacity: 0;
+    animation: cardFadeIn forwards;
+    -webkit-animation: cardFadeIn forwards;
+    -moz-animation: cardFadeIn forwards;
+    -o-animation: cardFadeIn forwards;
+    animation-duration: 1s;
+    cursor: default;
+}
+
+.card-background:nth-child(1){
+    animation-delay: 0.5s;
+}
+
+.card-background:nth-child(2){
+    animation-delay: 0.7s;
+}
+
+.card-background:nth-child(3){
+    animation-delay: 0.9s;
+}
+
+.card-background:nth-child(4){
+    animation-delay: 1.0s;
+}
+
+
+@keyframes cardFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+.feature-card-view-block {
+    background-color: white;
+    /* margin: auto auto; */
+    /* border: 1px solid #eeeeee; */
+    /* border: 1px solid black; */
+    box-shadow: 0px 1px 3px #c1c1c1;
+    height: 230px;
+
+}
+
+.feature-card-header-icon-block {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-card-header-icon {
+    height: 41px;
+    width: auto;
+}
+
+.feature-card-header-title-block {
+    display: flex;
+    justify-content: center;
+}
+
+.feature-card-title-text {
+    font-family: 'ManropeRegular';
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.feature-card-header-text-block {
+    margin: 16px;
+    color: #313131;
+    font-family: 'ManropeRegular';
+    height: 120px;
+    overflow-y: scroll;
+    word-break: keep-all;
+}
+
+.feature-card-header-text {
+    /* display: -webkit-box; */
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+.feature-card-header-text-block::-webkit-scrollbar {
+    display: none;
+}
+
+.feature-card-header-text-block {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+
+.one {
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-right-width: 0.09px;
+    border-bottom-width: 0.09px;
+}
+
+.two {
+    border-left-color: #d1d1d1;
+    border-left-style: solid;
+    border-bottom-color: transparent;
+    border-bottom-style: solid;
+    border-left-width: 0.09px;
+    border-bottom-width: 0.09px;
+}
+
+.three {
+    border-right-color: transparent;
+    border-right-style: solid;
+    border-top-color: #d1d1d1;
+    ;
+    border-top-style: solid;
+    border-top-width: 0.09px;
+    border-right-width: 0.09px;
+
+}
+
+.four {
+    border-left-color: #d1d1d1;
+    ;
+    border-left-style: solid;
+    border-top-color: #d1d1d1;
+    ;
+    border-top-style: solid;
+    border-left-width: 0.09px;
+    border-top-width: 0.09px;
+}
+
+@keyframes increase {
+    from {
+        display: block;
+        width: 20px;
+    }
+
+    /* to{
+        width: 100%;
+    } */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        padding-left: 0px;
+    }
+}
+
+
+@media screen and (max-width:1380px) and (min-width:781px) {
+    .header-image-block {
+        background-image: url("../HeaderImage/cell-1360.jpg");
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width:780px) and (min-width:560px) {
+    .topic-main-description-block {
+        margin-top: 64px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 64px;
+    }
+
+    .innovation-block {
+        margin-top: 32px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 32px;
+    }
+
+    .feature-block {
+        background-color: #131313;
+        padding-top: 64px;
+        padding-left: 64px;
+        padding-right: 64px;
+        padding-bottom: 64px;
+    }
+
+    .gray-color {
+        display: none;
+    }
+
+    .new-div {
+        margin-top: 0px;
+        background-color: #F4F4F4;
+
+    }
+
+    .feature-card-view-block {
+        margin: 16px;
+    }
+
+
+    .card-background:nth-child(1) {
+        width: 100%;
+    }
+
+    .card-background:nth-child(2) {
+        width: 100%;
+    }
+
+    .card-background:nth-child(3) {
+        width: 100%;
+    }
+
+    .card-background:nth-child(4) {
+        width: 100%;
+    }
+
+    .header-image-block {
+        background-image: url("../HeaderImage/cell-tab.jpg");
+        background-size: auto 100%;
+        padding-left: 0px;
+        justify-content: center;
+    }
+
+}
+
+
+@media screen and (max-width:560px) and (min-width:300px) {
+
+    .topic-main-description-block {
+        margin-top: 64px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 64px;
+    }
+
+    .innovation-block {
+        margin-top: 32px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 32px;
+    }
+
+
+
+    .one {
+        margin: 16px 0px;
+        padding: 8px;
+        border-radius: 12px;
+        box-shadow: 2px 4px 9px #cfcccc;
+    }
+
+    .two {
+        margin: 16px 0px;
+        padding: 8px;
+        border-radius: 12px;
+        box-shadow: 2px 4px 9px #cfcccc;
+    }
+
+    .three {
+        margin: 16px 0px;
+        padding: 8px;
+        border-radius: 12px;
+        box-shadow: 2px 4px 9px #cfcccc;
+    }
+
+    .four {
+        margin: 16px 0px;
+        padding: 8px;
+        border-radius: 12px;
+        box-shadow: 2px 4px 9px #cfcccc;
+
+    }
+
+    .header-image-block {
+        background-image: url("../HeaderImage/cell-phone.jpg");
+        background-size: cover;
+        justify-content: center;
+        padding-left: 0px;
+    }
+
+    .feature-content-header-text {
+        font-family: 'ManropeSemi';
+        font-size: 16px;
+    }
+
+    .feature-text-block {
+        padding: 8px 16px;
+        /* overflow-y: scroll; */
+    }
+
+    .feature-block {
+        background-color: #131313;
+        padding-top: 32px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 32px;
+    }
+
+    .gray-color {
+        display: none;
+    }
+
+    .new-div {
+        margin-top: 0px;
+        background-color: #F4F4F4;
+
+    }
+
+    .feature-card-view-block {
+        margin: 16px;
+    }
+
+
+    .card-background:nth-child(1) {
+        width: 100%;
+    }
+
+    .card-background:nth-child(2) {
+        width: 100%;
+    }
+
+    .card-background:nth-child(3) {
+        width: 100%;
+    }
+
+    .card-background:nth-child(4) {
+        width: 100%;
+    }
+}

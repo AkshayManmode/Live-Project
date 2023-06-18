@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Media</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script defer src="../script/media.js"></script>
+    <script src="../NavBar/navScript.js"></script>
+    <script type="text/javascript" src="../jquary/jquery-1.10.2.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Google Web Fonts -->
+
+    <link href="../style/mediaPage.css" rel="stylesheet">
+    <link rel="stylesheet" href="../NavBar/nav.css">
+    <link rel="stylesheet" href="../FixFooter/fixFooter.css">
+
+</head>
+
+<body>
+    <div class="global-header-container" id="nav-bar-placeholder">
+    </div>
+
+    <div class="header-image-container">
+        <div class="header-image-block">
+            <div class="header-title-text-block">
+                <span class="header-title-text">
+                    Media
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+
+        <div class="media-news-container">
+            <div class="news-header-block">
+                <h2 class="news-header">
+                    NEWS
+                </h2>
+            </div>
+        </div>
+
+        <div class="news-paper-container">
+            <div class="row advisors-details">
+                <div class="col-md-6 col-sm-12 content-news-image-block">
+                    <div class="content-image-sub-block">
+                        <img src="../Images/news-1.png" onclick="openImage(1)" class="content-image" alt="">
+                    </div>
+                    <div class="content-image-modal-1">
+                        <span onclick="onClose()">
+                            <img src="../Images/close_remove_x.png" alt="" srcset="">
+                        </span>
+                        <img src="../Images/news-1.png" class="content-image-big" alt="">
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12 content-news-image-block">
+                    <div class="content-image-sub-block">
+                        <img src="../Images/news-2.png" onclick="openImage(2)" class="content-image" alt="">
+                    </div>
+                    <div class="content-image-modal-2">
+                        <span onclick="onClose()">
+                            <img src="../Images/close_remove_x.png" alt="" srcset="">
+                        </span>
+                        <img src="../Images/news-2.png" class="content-image-big" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="divider">
+            <hr class="new-divider">
+        </div>
+        <div class="news-detail-container">
+            <div class="row advisors-details">
+                <div class="col-md-6 col-sm-12 content-image-block">
+                    <div class="content-image-sub-block">
+                        <img src="../Images/Artificial-Intelligence.png" class="content-image"
+                            alt="">
+                    </div>
+                    <div class="content-image-modal-3">
+                        <span onclick="onClose()">
+                            <img src="../Images/close_remove_x.png" alt="" srcset="">
+                        </span>
+                        <img src="../Images/Artificial-Intelligence.png" class="content-image-big" alt="">
+                    </div>
+                    <div class="content-header-block">
+                        <div class="news-header">
+                            <h3 class="news-header-text">
+                                ‘AI’ Based E-Vehicle Battery Introduced, Can Be Turned On And Off With Remote
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="content-para-text">
+                        <div class="news-description">
+                            <h6 class="news-description-text">
+                                Pune, 10th August 2022:
+                            </h6>
+                            <p class="news-description-para-text">
+                                How much battery is left for e-two-wheelers and three-
+                                wheelers? When will it be depleted? Has the temperature increased? These questions
+                                can be answered with ease now. What’s more, if your vehicle is stolen, it will now be
+                                possible to immediately switch off its battery. The Pune-based Infinite Orbit Research
+                                and Development (IORD) Research Institute in the field of e-vehicles has claimed that
+                                these actions are possible now.For the first time, ‘Al’ has been used in a battery.
+                                Unlike
+                                other batteries.
+                            </p>
+                            <div class="read-more-button-block">
+                                <a href="https://www.punekarnews.in/pune-ai-based-e-vehicle-battery-introduced-can-be-turned-on-and-off-with-remote/"
+                                    target="_blank">
+                                    <button class="redirect-url">
+                                        Read More
+                                    </button>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12 content-image-block">
+                    <div class="content-image-sub-block">
+                        <img src="../Images/cell-garbage.png"  class="content-image" alt="">
+                    </div>
+                    <div class="content-image-modal-4">
+                        <span onclick="onClose()">
+                            <img src="../Images/close_remove_x.png" alt="" srcset="">
+                        </span>
+                        <img src="../Images/cell-garbage.png" class="content-image-big" alt="">
+                    </div>
+                    <div class="content-header-block">
+                        <div class="news-header">
+                            <h3 class="news-header-text">
+                                Our Chief Scientist, Mr. Ashok Sudrik commented on 'Battery Waste Management & Disposal'
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="content-para-text">
+                        <div class="news-description">
+                            <h6 class="news-description-text">
+                                Pune, 30th August 2022:
+                            </h6>
+                            <p class="news-description-para-text">
+                                How much battery is left for e-two-wheelers and three-
+                                wheelers? When will it be depleted? Has the temperature increased? These questions
+                                can be answered with ease now. What’s more, if your vehicle is stolen, it will now be
+                                possible to immediately switch off its battery. The Pune-based Infinite Orbit Research
+                                and Development (IORD) Research Institute in the field of e-vehicles has claimed that
+                                these actions are possible now.For the first time, ‘Al’ has been used in a battery.
+                                Unlike
+                                other batteries.
+                            </p>
+                            <div class="read-more-button-block">
+                                <a href="https://motoring-trends.com/article/battery-waste-management-and-disposal/6ZUwyiaGigBuslRzgPDV"
+                                    target="_blank">
+                                    <button class="redirect-url">
+                                        Read More
+                                    </button>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="news-main-container">
+                <div class="news-bullets-container">
+                    <div class="news-bullets-header">
+                        <h4>
+                            Our Research Has Achive
+                        </h4>
+                    </div>
+                    <div class="news-bullets-block">
+                        <ul class="news-bullets-ul">
+                            <li class="bullets-list">
+                                The battery temperature of the e-vehicle can run up to 53 degrees. Currently, if it goes beyond 33 degrees, vehicles catch fire.
+                            </li>
+                            <li class="bullets-list">
+                                No need to charge the battery
+                            </li>
+                            <li class="bullets-list">
+                                This will save time and electricity costs for the vehicle owners.
+                            </li>
+                            <li class="bullets-list">
+                                With the use of ‘Al’, it will be possible to start, turn off the battery, and control the increased temperature through a remote.
+                            </li>
+                            <li class="bullets-list">
+                                This will apply to all vehicles as there is only one type of battery. No need for a separate charger.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div> -->
+
+        <div class="divider">
+            <hr class="new-divider">
+        </div>
+
+
+
+
+    </div>
+    <div class="footer-container" id="footer-placeholder">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $("#nav-bar-placeholder").load("../NavBar/nav.html");
+        });
+        $(function () {
+            $("#footer-placeholder").load("../FixFooter/fixFooter.html");
+        });
+    </script>
+</body>
+
+</html>

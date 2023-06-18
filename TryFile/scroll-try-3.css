@@ -1,0 +1,40 @@
+html {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    height: 100%;
+    overflow: auto;
+}
+
+body.scroll-container {
+    scroll-snap-type: y proximity;
+}
+
+/* .scroll-container, */
+.scroll-area {
+    font-size: 60px;
+    width: 100vw;
+    height: 100vh;
+}
+
+.scroll-area:nth-of-type(1) {
+    background: #49b293;
+}
+
+.scroll-container .scroll-area {
+    scroll-snap-align: start;
+}
+
+.scroll-area:nth-of-type(2) {
+    background: #c94e4b;
+}
+
+.scroll-area:nth-of-type(3) {
+    background: #4cc1be;
+}
+
+.scroll-area:nth-of-type(4) {
+    background: #8360A6;
+}
